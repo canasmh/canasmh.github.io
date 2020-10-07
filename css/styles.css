@@ -76,6 +76,16 @@ p {
   font-size: 1.3rem;
 }
 
+.sdss {
+  height: 30rem;
+  width: 30rem;
+  max-height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
 .top-container {
   position: relative;
   height: 80vh;
