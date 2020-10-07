@@ -16,11 +16,9 @@ h2 {
 
 hr {
   margin:  0;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  border: 0.25rem solid;
-  border-top: none;
-  border-left: none;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 5px solid;
   border-color: #d6e6f2;
   width: 15rem;
 }
@@ -64,13 +62,12 @@ h2 {
 }
 
 hr {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  border: 0.25rem solid;
+  border: 0.12rem solid;
   border-top: none;
   border-left: none;
   border-color: #d6e6f2;
-  width: 15%;
+  width: 4rem;
+  margin: 2rem auto;
 }
 
 p {
@@ -79,7 +76,7 @@ p {
 
 .centered {
   position: absolute;
-  top:12rem;
+  top:14rem;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 2rem 0;
