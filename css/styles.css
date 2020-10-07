@@ -75,3 +75,13 @@ hr {
 p {
   font-size: 1.3rem;
 }
+
+.top-container {
+  position: relative;
+  height: 30rem;
+  min-height: 10rem;
+  width: 30rem;
+  min-width: 30rem;
+  margin: 0 auto;
+  background-color: #8d93ab;
+}
