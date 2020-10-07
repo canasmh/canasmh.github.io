@@ -15,13 +15,14 @@ h2 {
 }
 
 hr {
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin:  0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   border: 0.25rem solid;
   border-top: none;
   border-left: none;
   border-color: #d6e6f2;
-  width: 15%;
+  width: 15rem;
 }
 
 p {
