@@ -3,7 +3,7 @@ body, h1, h2, h3, h4, h5, h6, p {
 }
 
 h1 {
-  font-size: 5.5rem;
+  font-size: 5.2rem;
   font-family: 'Piazzolla', serif;
   color: #f7fbfc;
 }
@@ -76,21 +76,22 @@ p {
 
 .centered {
   position: absolute;
-  top:18rem;
+  top:16rem;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 2rem 0;
+  padding: 0;
 }
 
 .main-header {
-  width: 30rem;
+  width: 23rem;
   margin: 0 auto;
   z-index: 1030;
+  padding-top: 5rem;
 }
 
 .quote {
   color: #f7fbfc;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   font-size: 1.2rem;
   font-family: 'Source Sans Pro', sans-serif;
@@ -112,5 +113,5 @@ p {
   min-height: 40rem;
   width: 100%;
   margin: 0 auto;
-  background-color: #8d93ab;
+  background-color: #000; /*#8d93ab;*/
 }
