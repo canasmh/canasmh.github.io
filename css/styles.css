@@ -27,7 +27,7 @@ hr {
   border-top: none;
   border-left: none;
   border-color: #afafaf;
-  width: 20%;
+  width: 7.5rem;
 
 }
 
@@ -92,7 +92,7 @@ p {
 }
 
 .navbar-brand {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 2.0rem;
   font-weight: bold;
 }
@@ -146,7 +146,7 @@ p {
   max-height: 100%;
   max-width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 10px;
 }
 
 .top-container {
