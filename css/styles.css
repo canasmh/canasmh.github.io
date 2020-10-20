@@ -95,6 +95,8 @@ img {
 .navbar-brand {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.9rem;
+    padding-top: 12 px;
+    padding-bottom: 12px;
 }
 
 .nav-item {
@@ -138,12 +140,12 @@ img {
 
 .main-content {
     position: relative;
-    padding-top: 4.5rem;
+    padding-top: 6rem;
 }
 
 .main-header {
     position: absolute;
-    top: 9.5rem;
+    top: 12rem;
     left: 0;
     right: 0;
     margin: auto;
