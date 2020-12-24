@@ -362,37 +362,3 @@ p {
     text-align: center;
     font-size: 1rem;
 }
-
-@media (max-width: 992px) {
-    .main-bg {
-    background-color: #090B12;
-    height: 47.5rem;
-    background-image: url("../images/sdss-low-res.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 35rem ;
-}
-    h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 5.0rem;
-    font-weight: bold;
-}
-    .main-header {
-    position: absolute;
-    top: 14rem;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 30rem;
-}
-    .welcome-paragraph {
-    color: #F0F5FA;
-    max-width: 100%;
-    line-height: 2.5;
-    font-size: 1.5rem;
-    margin: 0;
-    padding: 0;
-    /*font-family: 'Open Sans Condensed', sans-serif;*/
-}
-}
-
