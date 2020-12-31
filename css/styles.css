@@ -32,6 +32,7 @@ a:hover {
 
 body {
     margin: 0;
+    padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -68,10 +69,10 @@ p {
     font-size: 1.2rem;
 }
 
-@media (max-width: 800px) {
-    body {
-        text-align: center;
-    }
+@media screen and (min-width: 480px) and (max-width: 600px) {
+    /*body {*/
+    /*    text-align: center;*/
+    /*}*/
     h2 {
         font-size: 2.8rem;
         padding-bottom: 1.0rem;
@@ -83,22 +84,29 @@ p {
     }
 
     p {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 }
 
-@media (max-width: 500px) {
-    h2 {
+@media screen and (max-width: 480px) {
+    body {
+        text-align: center;
+    }
+
+    h1 {
         font-size: 3.2rem;
+    }
+    h2 {
+        font-size: 2.8rem;
         padding-bottom: 1.2rem;
     }
 
     h3 {
-        font-size: 2.5rem;
+        font-size: 2.25rem;
     }
 
     p {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -120,6 +128,11 @@ p {
     background-color: #F0F5FA;
 }
 
+@media screen and (max-width: 480px) {
+    .main-bg {
+        height: 35rem;
+    }
+}
 
 /* Nav Bar */
 .navbar-dark {
@@ -154,14 +167,14 @@ p {
     color: #f0f5f9!important;
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 480px) {
     .nav-link {
-        font-size: 2.5rem;
-        padding: 1.25rem 0;
+        font-size: 1.5rem;
+        padding: 0.8rem 0;
         text-align: left;
     }
     .navbar-brand {
-        font-size: 2.8rem;
+        font-size: 2.2rem;
     }
 
 }
@@ -208,10 +221,17 @@ p {
     margin-bottom: 35px;
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 480px) {
     .left-image, .right-image {
         float: none;
+        height: 12rem;
+        width: 12rem;
         margin: 5px 15px 40px 15px;
+    }
+
+    .main-image {
+        width: 20rem;
+        height: 20rem;
     }
 }
 
@@ -223,11 +243,11 @@ p {
     margin: 0 auto;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 480px) {
     .page-content {
-        float: none;
         padding-top: 2.8rem;
         padding-bottom: 2.5rem;
+        width: 90%;
     }
 }
 
@@ -253,24 +273,19 @@ p {
 	top:1px;
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 480px) {
     .myButton {
         width: 100%;
-        font-size: 1.5rem;
-        border-radius: 0;
-    }
-}
-
-@media (max-width: 500px) {
-    .myButton {
-        width: 100%;
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         border-radius: 0;
     }
 }
 
 
 /* Main Heading */
+#title {
+    width: 100%;
+}
 #mainContent {
     text-align: center;
 }
@@ -319,6 +334,20 @@ p {
     text-decoration: underline;
 }
 
+@media screen and (max-width: 480px) {
+    .main-header {
+        top: 10rem;
+        width: 20rem;
+    }
+
+    .main-hr {
+        margin: 1.25rem auto;
+    }
+
+    .welcome-paragraph {
+        font-size: 1rem;
+    }
+}
 
 /* About Me Section */
 #aboutMe {
@@ -404,13 +433,13 @@ p {
     margin: 0;
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 600px) {
     #footer {
         padding: 1.25rem 0;
     }
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 480px) {
     #footer {
         padding: 1.0rem 0;
     }
