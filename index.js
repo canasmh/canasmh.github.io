@@ -19,11 +19,11 @@ setTimeout(function(){
 }, 100);
 
 setTimeout(function() {
-    $('.welcome-paragraph').fadeToggle(2000);
-}, 1900);
+    $('.welcome-paragraph').fadeToggle(1800);
+}, 1700);
 
 setTimeout(function() {
-    $('img.main-image').fadeToggle(2000);
-}, 1900);
+    $('img.main-image').fadeToggle(1800);
+}, 1700);
 
 
