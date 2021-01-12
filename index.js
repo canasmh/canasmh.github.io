@@ -2,8 +2,6 @@
 var textWrapper = document.querySelector('.welcome-header');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-
-$('.welcome-header').hide();
 $('.welcome-paragraph').hide();
 $('img.main-image').hide();
 
