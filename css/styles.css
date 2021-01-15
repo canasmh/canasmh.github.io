@@ -55,7 +55,7 @@ h2 {
     color: #0F0F0F;
     font-family: 'Raleway', sans-serif;
     font-size: 2.5rem;
-    margin-top: 0;
+    margin: 0;
     padding-bottom: 1rem;
 }
 
@@ -125,12 +125,27 @@ li:active {
 
 /* Images */
 .main-image {
+    animation: pulse 6s infinite;
     height: 32rem;
     width: 32rem;
     margin-top: 10px;
     border: 4px solid #000;
     border-radius: 100%;
     border-color: #000;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1.0);
+    }
+
+    50% {
+        transform: scale(1.02);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
 }
 
 .left-image {
@@ -140,7 +155,7 @@ li:active {
     border: 2px solid #000;
     border-radius: 100%;
     margin-right: 50px;
-    margin-bottom: 35px;
+    margin-bottom: 50px;
 }
 
 .right-image {
@@ -150,7 +165,7 @@ li:active {
     border: 2px solid #000;
     border-radius: 100%;
     margin-left: 50px;
-    margin-bottom: 35px;
+    margin-bottom: 50px;
 }
 
 /* Page Content */
@@ -166,13 +181,17 @@ li:active {
 	/*background-color:#090B12;*/
 	border:1px solid #090B12;
 	display:inline-block;
+    text-align: center;
 	cursor:pointer;
 	font-family: 'Raleway', sans-serif;
-    font-size: 1.6rem;
-	padding:12px;
+    font-size: 1.4rem;
+	padding:12px 0 12px;
 	text-decoration:none;
     color:#090B12;
+    width: 100%;
+    margin-bottom: 1.2rem;
 }
+
 .myButton:hover {
 	color:#F0F5FA;
     background-color:#090B12;
@@ -186,6 +205,7 @@ li:active {
 #title {
     width: 100%;
 }
+
 #mainContent {
     text-align: center;
 }
@@ -305,6 +325,45 @@ li:active {
     /*font-size: 1.2rem;*/
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 35px;
+}
+
+.back-to-top {
+	/*background-color:#090B12;*/
+    float: center;
+	border:2px solid #F0F5FA;
+    display: inline-block;
+    text-align: center;
+	cursor:pointer;
+	font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+	padding:12px 100px 12px;
+	text-decoration:none;
+    color:#F0F5FA;
+    letter-spacing: 3px;
+    margin: 1.2rem auto 2.5rem;
+}
+.back-to-top:hover {
+	color:#090B12;
+    background-color:#F0F5FA;
+}
+.back-to-top:active {
+    color:#F0F5FA;
+    background-color:#090B12;
+	position:relative;
+	top:1px;
+}
+
+.social-media {
+    color: #F0F5FA;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 0 5px;
+}
+
+.social-media:hover {
+    color: #FFF;
+    display: inline-block;
+    font-size: 1.2rem;
 }
 
 /* Footer */
