@@ -21,11 +21,14 @@ setTimeout(function(){
 }, 100);
 
 setTimeout(function() {
-    $('.welcome-paragraph').fadeToggle(1800);
-}, 1700);
+    $('.welcome-paragraph').fadeToggle(1500);
+}, 2100);
 
 setTimeout(function() {
     $('img.main-image').fadeToggle(1800);
-}, 1700);
+}, 3800);
 
+$("a.back-to-top").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, 500);
+});
 
