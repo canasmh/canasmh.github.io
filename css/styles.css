@@ -356,14 +356,13 @@ li:active {
 .social-media {
     color: #F0F5FA;
     display: inline-block;
-    font-size: 1.2rem;
-    margin: 0 5px;
+    font-size: 1.4rem;
+    margin: 0 8px;
 }
 
 .social-media:hover {
     color: #FFF;
     display: inline-block;
-    font-size: 1.2rem;
 }
 
 /* Footer */
@@ -378,6 +377,7 @@ li:active {
 .copyright {
     padding: 0;
     margin: 0;
+    letter-spacing: 2px;
 }
 
 /* Media Queries */
@@ -490,6 +490,10 @@ li:active {
         /*margin-bottom: 35px;*/
     }
 
+    .back-to-top {
+        padding: 12px 75px 12px;
+    }
+
     #footer {
         padding: 1.0rem 0;
     }
@@ -591,6 +595,10 @@ li:active {
         /*margin-bottom: 35px;*/
     }
 
+    .back-to-top {
+        padding: 12px 38px 12px;
+    }
+
     #footer {
         padding: 1.0rem 0;
     }
@@ -689,6 +697,10 @@ li:active {
     .contact-paragraph {
         /*font-size: 0.85rem;*/
         /*margin-bottom: 35px;*/
+    }
+
+    .back-to-top {
+        padding: 12px 12px 12px;
     }
 
     #footer {
