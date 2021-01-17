@@ -1,3 +1,9 @@
+$('ol').hide();
+
+$('p.rules').click(function () {
+  $('ol').toggle();
+});
+
 var gamePattern = [];
 var buttonColors = ["red", "blue", "green", "yellow"];
 var userClickedPattern = [];
