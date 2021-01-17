@@ -69,6 +69,16 @@ p {
     font-size: 1.2rem;
 }
 
+ul {
+    list-style-type: disc;
+    list-style-position: initial;
+    line-height: 2;
+    text-align: left;
+}
+li {
+    font-size: 1.2rem;
+}
+
 /* Background Colors */
 .main-bg {
     background-color: #090B12;
@@ -99,12 +109,12 @@ p {
 }
 
 .nav-item {
-    margin:0 0.8rem;
+    margin:0 1.5rem;
 }
 
 .nav-link {
     color: #c9d6df!important;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -131,7 +141,6 @@ li:active {
     margin-top: 10px;
     border: 4px solid #000;
     border-radius: 100%;
-    border-color: #000;
 }
 
 @keyframes pulse {
@@ -140,7 +149,7 @@ li:active {
     }
 
     50% {
-        transform: scale(1.02);
+        transform: scale(1.03);
     }
 
     100% {
@@ -250,7 +259,6 @@ li:active {
     color: #F0F5FA;
     max-width: 100%;
     line-height: 2.5;
-    /*font-size: 1.5rem;*/
     margin: 0;
     padding: 0;
 }
@@ -259,6 +267,10 @@ li:active {
     text-decoration: underline;
 }
 
+.new-paragraph {
+    line-height: 2;
+    text-align: justify;
+}
 /* About Me Section */
 #aboutMe {
 }
@@ -266,18 +278,8 @@ li:active {
 .about-header {
 }
 
-.about-paragraph {
-    line-height: 2;
-    text-align: justify;
-}
-
 /* Research Section */
 #research {
-}
-
-.research-paragraph {
-    line-height: 2;
-    text-align: justify;
 }
 
 
@@ -285,19 +287,10 @@ li:active {
 #teaching {
 }
 
-.teaching-paragraph {
-    line-height: 2;
-    text-align: justify;
-}
-
 /* Outreach Section */
 #outreach {
 }
 
-.outreach-paragraph {
-    line-height: 2;
-    text-align: justify;
-}
 
 /* Contact */
 #contact {
@@ -328,8 +321,6 @@ li:active {
 }
 
 .back-to-top {
-	/*background-color:#090B12;*/
-    float: center;
 	border:2px solid #F0F5FA;
     display: inline-block;
     text-align: center;
@@ -345,12 +336,6 @@ li:active {
 .back-to-top:hover {
 	color:#090B12;
     background-color:#F0F5FA;
-}
-.back-to-top:active {
-    color:#F0F5FA;
-    background-color:#090B12;
-	position:relative;
-	top:1px;
 }
 
 .social-media {
@@ -418,6 +403,10 @@ li:active {
         font-size: 1.17rem;
     }
 
+    li {
+        font-size: 1.17rem;
+    }
+
     .main-bg {
         height: 40rem;
     }
@@ -457,10 +446,6 @@ li:active {
         border-radius: 0;
     }
 
-    /*.main-page {*/
-    /*    width: 85%;*/
-    /*}*/
-
     .main-header {
         top: 11.5rem;
         width: 22.5rem;
@@ -469,10 +454,6 @@ li:active {
     .main-hr {
         margin: 1.25rem auto;
     }
-
-    /*.welcome-paragraph {*/
-    /*    font-size: 1.2rem;*/
-    /*}*/
 
     .contact-content {
         padding-top: 4rem;
@@ -521,6 +502,10 @@ li:active {
         font-size: 1.0rem;
     }
 
+    li {
+        font-size: 1.0rem;
+    }
+
     .main-bg {
         height: 35rem;
     }
@@ -560,10 +545,6 @@ li:active {
         font-size: 1.15rem;
         border-radius: 0;
     }
-
-    /*.main-page {*/
-    /*    !*width: 85%;*!*/
-    /*}*/
 
     .main-header {
         top: 10.25rem;
@@ -626,6 +607,10 @@ li:active {
         font-size: 0.75rem;
     }
 
+    li {
+        font-size: 0.75rem;
+    }
+
     .main-bg {
         height: 30rem;
     }
@@ -648,9 +633,6 @@ li:active {
         margin: 5px 15px 40px 15px;
     }
 
-    /*.main-page {*/
-    /*    width: 90%;*/
-    /*}*/
     .main-image {
         width: 15.5rem;
         height: 15.5rem;
