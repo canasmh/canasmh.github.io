@@ -4,6 +4,18 @@
   text-align: center;
 }
 
+.btn {
+  border: 2px solid #4ECCA3;
+  border-radius: 10%;
+  background-color: transparent;
+  color: #4ECCA3;
+  font-size: 1.5rem;
+  padding: 7px 20px;
+  font-family: 'Indie Flower', cursive;
+  cursor: pointer;
+
+}
+
 .dice {
   text-align: center;
   display: inline-block;
