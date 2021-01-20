@@ -115,8 +115,6 @@ li {
 }
 
 .nav-item {
-    padding-top: 12px;
-    padding-bottom: 12px;
     margin:0 1.0rem;
 }
 
@@ -384,14 +382,20 @@ li:active {
         text-align: center;
     }
 
+    .nav-link {
+        font-size: 1.15rem;
+        padding: 0.6rem 0;
+        text-align: left;
+    }
+
     .no-padding {
         padding: 0;
     }
 }
 @media screen and (max-width: 768px) and (min-width: 600px) {
     .nav-link {
-        font-size: 1.75rem;
-        padding: 1.25rem 0;
+        font-size: 1.25rem;
+        padding: 0.8rem 0;
         text-align: left;
     }
 
@@ -441,7 +445,7 @@ li:active {
     }
 
     .nav-link {
-        font-size: 1.5rem;
+        font-size: 1.35rem;
         padding: 1.0rem 0;
         text-align: left;
     }
@@ -544,8 +548,8 @@ li:active {
     }
 
     .nav-link {
-        font-size: 1.25rem;
-        padding: 0.8rem 0;
+        font-size: 1.5rem;
+        padding: 1.1rem 0;
         text-align: left;
     }
 
@@ -653,8 +657,8 @@ li:active {
     }
 
     .nav-link {
-        font-size: 1.15rem;
-        padding: 0.9rem 0;
+        font-size: 1.6rem;
+        padding: 1.2rem 0;
         text-align: left;
     }
 
