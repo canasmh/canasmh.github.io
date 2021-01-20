@@ -197,6 +197,7 @@ li:active {
 .myButton {
 	/*background-color:#090B12;*/
 	border:1px solid #090B12;
+    border-radius: 25px;
 	display:inline-block;
     text-align: center;
 	cursor:pointer;
@@ -378,7 +379,7 @@ li:active {
 @media screen and (max-width: 992px) and (min-width: 768px) {
     .myButton {
         width: 100%;
-        border-radius: 0;
+        border-radius: 25px;
         text-align: center;
     }
 
@@ -401,7 +402,7 @@ li:active {
 
     .myButton {
         width: 100%;
-        border-radius: 0;
+        border-radius: 25px;
         text-align: center;
     }
 
@@ -475,8 +476,8 @@ li:active {
 
     .myButton {
         width: 100%;
+        border-radius: 25px;
         font-size: 1.3rem;
-        border-radius: 0;
     }
 
     .main-header {
@@ -548,8 +549,8 @@ li:active {
     }
 
     .nav-link {
-        font-size: 1.5rem;
-        padding: 1.1rem 0;
+        font-size: 1.35rem;
+        padding: 1.0rem 0;
         text-align: left;
     }
 
@@ -580,7 +581,7 @@ li:active {
     .myButton {
         width: 100%;
         font-size: 1.15rem;
-        border-radius: 0;
+        border-radius: 25px;
     }
 
     .main-header {
@@ -657,8 +658,8 @@ li:active {
     }
 
     .nav-link {
-        font-size: 1.6rem;
-        padding: 1.2rem 0;
+        font-size: 1.35rem;
+        padding: 0.8rem 0;
         text-align: left;
     }
 
@@ -695,8 +696,9 @@ li:active {
 
     .myButton {
         width: 100%;
+        padding: 0px;
         font-size: 1.00rem;
-        border-radius: 0;
+        border-radius: 25px;
     }
 
     .page-content {
