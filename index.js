@@ -29,7 +29,6 @@ setTimeout(function() {
 }, 3800);
 
 $("a.back-to-top").click(function() {
-    console.log("boobs")
   $("html, body").animate({ scrollTop: 0 }, {
       duration: 1000});
 });

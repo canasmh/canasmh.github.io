@@ -96,6 +96,12 @@ li {
     background-color: #F0F5FA;
 }
 
+/* General Remarks */
+
+.no-padding {
+    padding: 0 15px;
+}
+
 /* Nav Bar */
 .navbar-dark {
     color: #f0f5f9!important;
@@ -109,12 +115,16 @@ li {
 }
 
 .nav-item {
-    margin:0 1.5rem;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin:0 1.0rem;
 }
 
 .nav-link {
     color: #c9d6df!important;
-    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+    font-size: 1.4rem;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -366,6 +376,18 @@ li:active {
 }
 
 /* Media Queries */
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .myButton {
+        width: 100%;
+        border-radius: 0;
+        text-align: center;
+    }
+
+    .no-padding {
+        padding: 0;
+    }
+}
 @media screen and (max-width: 768px) and (min-width: 600px) {
     .nav-link {
         font-size: 1.75rem;
@@ -375,9 +397,12 @@ li:active {
 
     .myButton {
         width: 100%;
-        /*font-size: 1.3rem;*/
         border-radius: 0;
         text-align: center;
+    }
+
+    .no-padding {
+        padding: 0;
     }
 }
 
@@ -405,6 +430,10 @@ li:active {
 
     li {
         font-size: 1.17rem;
+    }
+
+    .no-padding {
+        padding: 0;
     }
 
     .main-bg {
@@ -504,6 +533,10 @@ li:active {
 
     li {
         font-size: 1.0rem;
+    }
+
+    .no-padding {
+        padding: 0;
     }
 
     .main-bg {
@@ -609,6 +642,10 @@ li:active {
 
     li {
         font-size: 0.75rem;
+    }
+
+    .no-padding {
+        padding: 0;
     }
 
     .main-bg {
