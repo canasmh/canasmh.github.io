@@ -54,6 +54,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-bottom: 1px solid #15133C;
 }
 
 .first-half, .second-half {
@@ -117,28 +118,35 @@ a {
 .about:hover, .portfolio:hover {
   background-color: #F1EEE9;
   color: #15133C;
-  border-bottom: 5px solid #15133C;
+}
+
+.contact {
+  border-top: 3px solid #15133C;
+}
+
+.contact:hover {
+  border-top: 3px solid #F1EEE9;
 }
 
 .contact:hover, .cv:hover {
   background-color: #15133C;
   color: #F1EEE9;
-  border-top: 5px solid #F1EEE9;
+  /* border-top: 2px solid #F1EEE9; */
 }
 
 @media only screen and (min-width: 992px) {
-  .main-page {
-    width: 60vw;
-    height: 80vh;
+  h1 {
+    font-size: 64px;
   }
 
-  .first-half, .second-half {
-    height: 30vh;
+  h2 {
+    font-weight: 200;
+    font-size: 48px;
+    letter-spacing: 40px;
+    margin: 0;
   }
 
-  .about, .portfolio, .cv, .contact {
-    height: 15vh;
+  .profile-pic {
+    border: 2px solid #15133C;
   }
-
-
 }
