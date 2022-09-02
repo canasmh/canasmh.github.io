@@ -100,19 +100,26 @@ a {
   border: 6px solid #15133C;
 }
 
-.about, .portfolio, .cv, .contact {
+.portfolio, .contact {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 20vh;
+  height: 22vh;
+}
+
+.about, .cv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 18vh;
 }
 
 .portfolio h2 {
-  margin-bottom: 12vh;
+  margin-bottom: 8vh;
 }
 
 .contact h2 {
-  margin-top: 12vh;
+  margin-top: 8vh;
 }
 
 .about:hover, .portfolio:hover {
