@@ -22,16 +22,19 @@ body {
 
 h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 32px;
+  font-size: 28px;
   margin: 0;
   font-weight: 100;
+  letter-spacing: 2px;
 }
 
 h2 {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
+  font-weight: 200;
   font-size: 24px;
+  letter-spacing: 8px;
   margin: 0;
+
 }
 
 p {
@@ -69,7 +72,7 @@ a {
 }
 
 .fab {
-  font-size: 5vh;
+  font-size: 24px;
   margin-left: 16px;
   margin-right: 16px;
 }
@@ -128,16 +131,25 @@ a {
 }
 
 .contact {
-  border-top: 1px solid #15133C;
-}
-
-.contact:hover {
   border-top: 1px solid #F1EEE9;
 }
 
 .contact:hover, .cv:hover {
   background-color: #15133C;
   color: #F1EEE9;
+}
+
+@media only screen and (min-width: 320px) {
+  h1 {
+    font-size: 28px;
+    letter-spacing: 4px;
+    font-weight: 200;
+  }
+
+  h2 {
+    letter-spacing: 16px;
+    font-weight: 300;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -153,24 +165,28 @@ a {
   }
 
   .fab {
-    margin-left: 32px;
-    margin-right: 32px;
+    font-size: 48px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 }
 
 @media only screen and (min-width: 992px) {
   h1 {
     letter-spacing: 24px;
+    font-weight: 100;
   }
 
   h2 {
     letter-spacing: 32px;
     margin: 0 auto;
+    font-weight: 200;
   }
 
   .fab {
-    margin-left: 56px;
-    margin-right: 56px;
+    font-size: 40px;
+    margin-left: 64px;
+    margin-right: 64px;
   }
 
   .about, .portfolio, .contact, .cv {
@@ -194,10 +210,10 @@ a {
   }
 
   .contact, .cv {
-    border-top: 1px solid #F1EEE9;
+    border-top: 2px solid #F1EEE9;
   }
 
   .about, .portfolio {
-    border-bottom: 1px solid #15133C;
+    border-bottom: 2px solid #15133C;
   }
 }
