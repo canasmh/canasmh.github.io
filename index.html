@@ -1,186 +1,52 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
-<head>
+  <head>
     <meta charset="utf-8">
-<!--    <meta content="width=device-width, initial-scale=1" name="viewport" />-->
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Welcome | Manuel H. Canas</title>
-    <meta name="keywords" content="manuel canas, manny canas, manuel h. cañas, astronomy, planet formation, streaming instability">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Montserrat:ital,wght@0,200;1,500&family=Open+Sans+Condensed:ital,wght@0,300;1,300&family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://kit.fontawesome.com/f3fa623060.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="images/favicon.png" />
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-</head>
-<body>
-    <!-- TODO: Make page responsive and more mobile-friendly @ 480, 600, 768, 992, 1382.-->
-    <!-- Navigation bar and top of page -->
-    <section id="title">
-        <div>
-            <nav class="navbar navbar-expand-lg navbar-dark dark-bg fixed-top">
-                <a class="navbar-brand" href="index.html">Manuel H. Cañas</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="AboutMe.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#research">Research</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#teaching">Teaching</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#outreach">Outreach</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-
-    <!-- Main Content -->
-        <div class="main-bg" id="mainContent">
-            <div class="main-page">
-                <div class="main-content">
-                    <img class="main-image" src="images/sdss-low-res.png" alt="sloan-canas">
-                    <div class="main-header">
-                        <h1 class="welcome-header">Welcome</h1>
-
-                        <hr class="trans--grow">
-                        <p class="welcome-paragraph">
-                            "Three things can not be long hidden: the Sun, the Moon, and <span class="underline">the Truth</span>." - Buddha
-                        </p>
-<!--                        <p class="welcome-paragraph">-->
-<!--                           - Buddha-->
-<!--                        </p>-->
-                    </div>
-                </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/f6264fea48.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="main-page">
+      <div class="light-bg header">
+        <a href="index.html"><h1>Manuel H. Canas</h1></a>
+      </div>
+        <div class="navy-bg first-half">
+          <a href="about.html">
+            <div class="about">
+              <h2>About</h2>
             </div>
-        </div>
-    </section>
-
-    <!-- About Me -->
-    <div class="bg1" id ="aboutMe">
-        <div class="page-content">
-            <img class="left-image" src="images/profile.png" alt="me-and-sloan">
-            <h2>About me</h2>
-            <p class="new-paragraph">
-                Hello, my name is Manny and I am a second-year graduate student in the Department of Astronomy at
-                <a href="https://www.nmsu.edu" target="_blank">New Mexico State University </a>.
-                I am currently working under the mentorship of <a href="http://wladimirlyra.com/" target="_blank">Dr. Wladimir Lyra</a>,
-                using hydrodynamical simulations to model the formation of the Kuiper belt. I obtained a B.S. in Astrophysics
-                and a B.S. in Physics from the <a href="https://www.cofc.edu/" target="_blank">College of Charleston</a>, Charleston, SC.
-            </p>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 no-padding">
-                        <a href="AboutMe.html" class="myButton">About Me</a>
-                    </div>
-                    <div class="col-lg-6 no-padding">
-                        <a href="docs/canas-cv.pdf" target="_blank" class="myButton">Curriculum Vitae</a>
-                    </div>
-                </div>
+          </a>
+          <a href="portfolio.html">
+            <div class="portfolio">
+              <h2>Portfolio</h2>
             </div>
-            <hr>
+          </a>
         </div>
-    </div>
-
-    <!-- Research -->
-    <div class="bg2" id="research">
-        <div class="page-content">
-            <img class="right-image" src="images/tele_cropped.png" alt="telescopes">
-            <h2>Research Interests</h2>
-            <p class="new-paragraph">
-                My research involves using hydrodynamical simulations to simulate various planet and planetesimal
-                formation scenarios. I am currently working on a project with
-                <a href="http://wladimirlyra.com/" target="_blank">Dr. Wladimir Lyra</a> regarding the formation of
-                Kuiper belt objects. We model the Kuiper belt using the streaming instability and a two species model,
-                namely ices and silicates.
-            </p>
-            <hr>
-        </div>
-    </div>
-
-    <!-- Teaching -->
-    <div class="bg1" id="teaching">
-        <div class="page-content">
-            <img class="left-image" src="images/profile-apo.png" alt="outreach-apo">
-            <h2 class="teaching-header">Teaching</h2>
-            <p class="new-paragraph">
-                I have several years of experiences as a teacher assistant for introductory astronomy courses at New
-                Mexico State University and at the College of Charleston. Information regarding the <strong>ASTR105</strong>
-                introductory course at NMSU can be found <a href="">here</a>.
-            </p>
-            <hr>
-        </div>
-    </div>
-
-     <!-- Outreach -->
-    <div class="bg2" id="outreach">
-        <div class="page-content">
-            <img class="right-image" src="images/outreach_cropped.png" alt="outreach-eclipse">
-            <h2 class="outreach-header">Outreach</h2>
-            <p class="new-paragraph">
-                I have had extensive experience in outreach through my role as a student of astronomy, and as my brief
-                time as an employee of <a href="https://www.wyomingstargazing.org/" target="_blank">Wyoming Stargazing</a>,
-                a 501(c)3 non-profit organization specializing in night-sky tours. I have independently led several public
-                stargazing tours, and have helped in events such as the
-                <a href="https://www.apo.nmsu.edu/" target="_blank">Apache Point Observatory</a> open house.
-            </p>
-            <hr>
-        </div>
-    </div>
-
-    <!-- TODO: Include facebook, IG Linkedin, etc. -->
-    <!-- Contact -->
-    <div class="dark-bg" id="contact">
-        <div class="contact-content">
-            <h2 class="contact-header">Contact</h2>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <h3>Email</h3>
-                        <p class="contact-paragraph">canasmh@nmsu.edu</p>
-                    </div>
-                    <div class="col-lg-4">
-                        <h3>Phone</h3>
-                        <p class="contact-paragraph">+1 (575) 646 - 2613</p>
-                    </div>
-                    <div class="col-lg-4">
-                        <h3>Office</h3>
-                        <p class="contact-paragraph">Astronomy Building <br> Room 121</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <a href="#title" class="back-to-top">BACK TO TOP</a>
-                    </div>
-                </div>
+        <div class="light-bg second-half">
+          <a href="contact.html">
+            <div class="contact">
+              <h2>Contact</h2>
             </div>
-            <a class="social-media" href="https://www.twitter.com/astromanny" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a class="social-media" href="https://www.instagram.com/too_manny_stars" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a class="social-media" href="https://www.linkedin.com/in/manuel-canas-920127204" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a class="social-media" href="mailto:canasmh@nmsu.edu"><i class="far fa-envelope"></i></a>
+          </a>
+          <a href="cv.html">
+            <div class="cv">
+              <h2>CV</h2>
+            </div>
+          </a>
         </div>
+      <div class="dark-bg socials">
+        <i class="fab fa-github"></i>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
     </div>
-
-    <div id="footer">
-        <p class="copyright">&copy; 2021 Manuel H. Canas</p>
-    </div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-<script src="index.js" charset="utf-8"></script>
-
-</body>
+    <img class="profile-pic" src="./assets/images/profile-pic.png" alt="profile-picture">
+  </body>
+</html>
