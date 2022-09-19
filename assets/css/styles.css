@@ -231,7 +231,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 5vh;
+  height: 15vh;
 }
 
 hr {
@@ -241,11 +241,15 @@ hr {
   color: #F1EEE9;
 }
 
+h2.motto {
+  font-weight: 400;
+  font-size: 42px;
+}
 .motto-item h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
-  font-size: 20px;
-  letter-spacing: 10px;
+  font-size: 32px;
+  letter-spacing: 15px;
   margin: 0;
   text-align: center;
 }
