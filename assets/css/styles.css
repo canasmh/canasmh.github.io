@@ -222,6 +222,79 @@ a {
   }
 }
 
+.motto-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15vh;
+}
+
+hr {
+  width: 50%;
+  margin: 15px auto;
+  border: 0.2px solid #F1EEE9;;
+  color: #F1EEE9;
+}
+
+h2.motto {
+  font-weight: 400;
+  font-size: 42px;
+  padding-top: 25px;
+  margin-bottom: 25px;
+}
+
+.motto-item h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 32px;
+  letter-spacing: 15px;
+  margin: 0;
+}
+
+.em {
+  font-weight: 600!important;
+}
+
+@media only screen and (min-width: 600px) {
+  h2.motto {
+    padding-top: 40px;
+    font-weight: 400;
+    font-size: 64px;
+  }
+  .motto-item {
+    height: 18vh;
+  }
+
+  .motto-item h3 {
+    font-size: 56px;
+    letter-spacing: 15px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  h2.motto {
+    padding-top: 32px;
+    font-weight: 400;
+    font-size: 56px;
+  }
+  .motto-item {
+    height: 16vh;
+  }
+
+  .motto-item h3 {
+    font-size: 48px;
+    letter-spacing: 15px;
+  }
+
+  hr {
+    width: 30%;
+  }
+
+  .em {
+    font-weight: 500!important;
+  }
+}
+
 .coming-soon {
   display: flex;
   align-items: center;
