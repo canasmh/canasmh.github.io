@@ -222,6 +222,39 @@ a {
   }
 }
 
+.motto {
+  padding-top: 25px;
+  margin-bottom: 25px;
+}
+
+.motto-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+}
+
+hr {
+  width: 50%;
+  margin: 15px auto;
+  border: 0.2px solid #F1EEE9;;
+  color: #F1EEE9;
+}
+
+.motto-item h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  letter-spacing: 10px;
+  margin: 0;
+  text-align: center;
+}
+
+.em {
+  font-weight: 600!important;
+}
+
+
 .coming-soon {
   display: flex;
   align-items: center;
