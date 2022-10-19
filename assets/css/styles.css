@@ -47,14 +47,129 @@ table {
 	border-spacing: 0;
 }
 
+/* END OF CSS RESET */
+
 html {
     font-size: 62.5%;
 }
 
 body {
     font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    /* border: 1px solid #000000; */
+    letter-spacing: 2px;   
 }
 
-* {
-    border: 2px solid #BBBBBB;
+h1 {
+    font-size: 2.3rem;
+    color: #15133C;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3.5%;
+    height: 10vh;
+}
+
+.fa-bars {
+    color: #15133C;
+    font-size: 2.3rem;
+}
+
+.fa-bars:hover {
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+nav {
+    position: absolute;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    width: 100%;
+    background-color: rgba(245, 245, 245, 1);
+}
+
+nav a {
+    width: 100%;
+    border-top: 1px solid #15133C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+
+nav a:first-child {
+    border-top: none;
+}
+
+/* ABOUT ME SECTION */
+
+section.about-me {
+    height: 75vh;
+    background:linear-gradient(0deg, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url(../images/profile-pic.png);
+    background-size: contain;
+}
+
+
+@media only screen and (min-width: 600px) {
+    h1 {
+        font-size: 3.7rem;
+    }
+
+    .fa-bars {
+        font-size: 3.7rem;
+    }
+
+    nav a {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    h1 {
+        font-weight: 400;
+        letter-spacing: 5px;
+    }
+    .fa-bars {
+        display: none;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav {
+        position: static;
+        display: flex;
+        flex-flow: row nowrap;
+        border-top: 1px solid #15133C;
+        justify-content: space-evenly;
+        align-items: center;
+        border-bottom: 1px solid #15133C;
+        height: 10vh;
+    }
+
+    nav a {
+        width: auto;
+        border-top: none;
+        font-size: 2rem;
+    }
+
+
 }
