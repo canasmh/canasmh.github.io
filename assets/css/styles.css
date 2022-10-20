@@ -65,7 +65,7 @@ button {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px;
     font-weight: 400;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
 }
 
 h1 {
@@ -412,6 +412,10 @@ div.edu-logos {
         font-size: 2rem;
     }
 
+    button {
+        font-size: 1.6rem;
+    }
+
     .fa-bars {
         font-size: 3.7rem;
     }
@@ -477,6 +481,11 @@ div.edu-logos {
         font-weight: 400;
         letter-spacing: 5px;
     }
+
+    button {
+        font-size: 2rem;
+    }
+
     .fa-bars {
         display: none;
     }
