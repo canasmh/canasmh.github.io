@@ -239,6 +239,12 @@ div.edu-logos {
     cursor: pointer;
 }
 
+#portfolio button:hover {
+    background-color: #FFFFFF;
+    color: #15133C;
+    border: 1px solid #15133C;
+}
+
 #portfolio a {
     width: 60%;
     font-weight: 100;
