@@ -7,6 +7,7 @@ function toggleNavLinks() {
     Array.from(navLinks).forEach(item => {
         
         item.classList.toggle("hide");
+        item.addEventListener('click', toggleNavLinks);
     })
 }
 
