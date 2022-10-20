@@ -141,6 +141,10 @@ nav a:first-child {
     border-top: none;
 }
 
+nav a:hover {
+    color: #EC994B;
+}
+
 /* ABOUT ME SECTION */
 section {
     padding: 10% 5%;
@@ -395,6 +399,7 @@ div.edu-logos {
 @media only screen and (min-width: 600px) {
     h1 {
         font-size: 3.7rem;
+        letter-spacing: 12px;
     }
     h2 {
         font-size: 3.4rem;
@@ -478,8 +483,9 @@ div.edu-logos {
 
 @media only screen and (min-width: 900px) {
     h1 {
+        font-size: 4rem;
         font-weight: 400;
-        letter-spacing: 5px;
+        letter-spacing: 16px;
     }
 
     button {
