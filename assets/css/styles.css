@@ -235,7 +235,6 @@ div.edu-logos {
 }
 
 #portfolio button {
-    font-size: 1.6rem;
     background-color: #15133C;
     color: #FFFFFF;
     padding: 1.5rem 2rem;
@@ -465,6 +464,12 @@ div.edu-logos {
         font-size: 8rem;
         margin: 3.5rem;
     }
+
+    #cv button {
+        width: 35%;
+        margin: 5rem 2.5rem 1rem;
+        padding: 2.5rem 0;
+    }
 }
 
 @media only screen and (min-width: 900px) {
@@ -522,5 +527,11 @@ div.edu-logos {
     .soc-icon {
         font-size: 12.5rem;
         margin: 6rem;
+    }
+
+    #cv button {
+        width: 25%;
+        margin: 5rem 3.2rem 1rem;
+        padding: 2.5rem 0;
     }
 }
