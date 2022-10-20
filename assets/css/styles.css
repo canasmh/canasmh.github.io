@@ -327,6 +327,20 @@ div.edu-logos {
     border: 1px solid #FFFFFF;
 }
 
+#contact h2 {
+    margin-bottom: 2.5rem;
+}
+
+#contact p {
+    margin-bottom: 3.5rem;
+}
+
+.soc-icon {
+    font-size: 3.5rem;
+    margin: 2.5rem;
+    cursor: pointer;
+}
+
 @media only screen and (min-width: 600px) {
     h1 {
         font-size: 3.7rem;
@@ -390,6 +404,11 @@ div.edu-logos {
         justify-content: center;
         align-items: center;
     }
+
+    .soc-icon {
+        font-size: 8rem;
+        margin: 3.5rem;
+    }
 }
 
 @media only screen and (min-width: 900px) {
@@ -438,5 +457,10 @@ div.edu-logos {
 
     .mundolm:hover, .uscucei:hover, .three-brothers:hover, .networthdle:hover {
         box-shadow: 5px 5px 18px white;
+    }
+
+    .soc-icon {
+        font-size: 12.5rem;
+        margin: 6rem;
     }
 }
