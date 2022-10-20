@@ -2,6 +2,8 @@ let navButton = document.querySelector('.fa-bars')
 let navLinks = document.querySelectorAll('nav a')
 let screenWidth = screen.width;
 
+const year = new Date().getFullYear();
+
 function toggleNavLinks() {
         
     Array.from(navLinks).forEach(item => {
@@ -43,5 +45,6 @@ window.onresize = window.onload = function() {
     }
 }
 
+let footer = document.querySelector('footer p');
 
-
+footer.textContent = `© ${year} | Manuel H. Canas`
