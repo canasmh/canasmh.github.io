@@ -355,6 +355,52 @@ div.edu-logos {
     cursor: pointer;
 }
 
+.soc-icon:hover {
+    color: #EC994B;
+}
+
+/* CV SECTION */
+#cv {
+    background-color: #15133C;
+    color: #FFFFFF;
+}
+
+#cv h2 {
+    margin-bottom: 3rem;
+}
+
+#cv button {
+    padding: 16px 14px;
+    width: 70%;
+    font-weight: 500;
+    letter-spacing: 5px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+    color: #FFF;
+    background-color:#15133C;
+    border: 1px solid #FFF;
+}
+
+#cv button:hover {
+    background-color: #EC994B;
+    color:#fff;
+    border: 1px solid #fff;
+}
+
+#cv div.cv-buttons button {
+    margin-top: 0;
+    background-color: #FFFFFF;
+    color: #15133C;
+    border-radius: 1px solid #15133C;
+}
+
+#cv div.cv-buttons button:hover {
+    background-color: #EC994B;
+    color:#fff;
+    border: 1px solid #fff;
+}
+
 @media only screen and (min-width: 600px) {
     h1 {
         font-size: 3.7rem;
