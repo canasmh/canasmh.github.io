@@ -382,6 +382,15 @@ div.edu-logos {
         height: 30rem;
         margin: 3rem;
     }
+
+    .portfolio-item {
+        flex-basis: 35%;
+        height: 25rem;
+        margin: 5rem;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media only screen and (min-width: 900px) {
@@ -406,7 +415,7 @@ div.edu-logos {
         justify-content: space-evenly;
         align-items: center;
         border-bottom: 1px solid #15133C;
-        height: 10vh;
+        height: 8vh;
     }
 
     nav a {
@@ -417,5 +426,18 @@ div.edu-logos {
 
     section {
         padding: 5% 2% 3%;
+    }
+
+    .portfolio-item {
+        flex-basis: 25%;
+        height: 30rem;
+        margin: 8rem 5rem;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mundolm:hover, .uscucei:hover, .three-brothers:hover, .networthdle:hover {
+        box-shadow: 5px 5px 18px white;
     }
 }
