@@ -56,7 +56,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: 'Montserrat', sans-serif;
-    /* border: 1px solid #000000; */
+    line-height: 1.5;
     letter-spacing: 2px;
     color: #15133C; 
 }
@@ -135,14 +135,14 @@ nav a:first-child {
 
 /* ABOUT ME SECTION */
 section {
-    padding: 10% 2%;
+    padding: 10% 5%;
+    text-align: center;
 }
 section.about-me {
     /* height: 75vh; */
     background:linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)), url(../images/profile-pic.png);
     background-size: cover;
     background-position: center;
-    text-align: center;
 }
 
 section.about-me h2 {
@@ -226,7 +226,6 @@ div.edu-logos {
     background: linear-gradient(0deg, rgba(21, 19, 60, 0.5), rgba(21, 19, 60, 0.5)), url(https://blog.alexdevero.com/wp-content/uploads/2019/08/12-07-19-16-tips-to-become-a-better-programmer-pt1-blog.jpg);
     background-position: center;
     color: #FFFFFF;
-    text-align: center;
 }
 
 #portfolio button {
@@ -328,6 +327,20 @@ div.edu-logos {
     border: 1px solid #FFFFFF;
 }
 
+#contact h2 {
+    margin-bottom: 2.5rem;
+}
+
+#contact p {
+    margin-bottom: 3.5rem;
+}
+
+.soc-icon {
+    font-size: 3.5rem;
+    margin: 2.5rem;
+    cursor: pointer;
+}
+
 @media only screen and (min-width: 600px) {
     h1 {
         font-size: 3.7rem;
@@ -391,6 +404,11 @@ div.edu-logos {
         justify-content: center;
         align-items: center;
     }
+
+    .soc-icon {
+        font-size: 8rem;
+        margin: 3.5rem;
+    }
 }
 
 @media only screen and (min-width: 900px) {
@@ -439,5 +457,10 @@ div.edu-logos {
 
     .mundolm:hover, .uscucei:hover, .three-brothers:hover, .networthdle:hover {
         box-shadow: 5px 5px 18px white;
+    }
+
+    .soc-icon {
+        font-size: 12.5rem;
+        margin: 6rem;
     }
 }
