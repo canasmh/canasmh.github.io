@@ -395,6 +395,14 @@ div.edu-logos {
     border: 1px solid #fff;
 }
 
+/* FOOTER */ 
+footer {
+    font-size: 1rem;
+    padding: 5%;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
 @media only screen and (min-width: 600px) {
     h1 {
         font-size: 3.7rem;
@@ -478,6 +486,12 @@ div.edu-logos {
         margin: 5rem 2.5rem 1rem;
         padding: 2.5rem 0;
     }
+
+    footer {
+        font-size: 1.2rem;
+        padding: 3%;
+        letter-spacing: 5px;
+    }
 }
 
 @media only screen and (min-width: 900px) {
@@ -547,5 +561,10 @@ div.edu-logos {
         width: 25%;
         margin: 5rem 3.2rem 1rem;
         padding: 2.5rem 0;
+    }
+
+    footer {
+        padding: 2%;
+        letter-spacing: 12px;
     }
 }
