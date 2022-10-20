@@ -237,6 +237,7 @@ div.edu-logos {
     border: 1px solid #FFFFFF;
     border-radius: 8px;
     font-weight: 100;
+    cursor: pointer;
 }
 
 #portfolio a {
