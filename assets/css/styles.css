@@ -57,15 +57,31 @@ body {
     font-size: 1.6rem;
     font-family: 'Montserrat', sans-serif;
     /* border: 1px solid #000000; */
-    letter-spacing: 2px;   
+    letter-spacing: 2px;
+    color: #15133C; 
 }
 
 h1 {
     font-size: 2.3rem;
-    color: #15133C;
     font-weight: 500;
     letter-spacing: 2px;
 }
+
+h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+p {
+    font-weight: 300;
+}
+
 
 a {
     text-decoration: none;
@@ -120,9 +136,91 @@ nav a:first-child {
 /* ABOUT ME SECTION */
 
 section.about-me {
-    height: 75vh;
+    /* height: 75vh; */
     background:linear-gradient(0deg, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url(../images/profile-pic.png);
     background-size: contain;
+    text-align: center;
+    padding: 10% 2%;
+}
+
+section.about-me h2 {
+    margin-bottom: 3rem;
+}
+
+section.about-me h3 {
+    margin: 2rem auto;
+}
+
+div.skills-logos {
+    height: 8rem;
+    max-height: 8rem;
+    white-space: nowrap;
+    margin: 2.5rem auto;
+}
+
+div.skills-logos:hover {
+    animation-play-state: paused;
+}
+
+.programming-logo {
+    display: inline;
+    height: 5rem;
+    width: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+div.edu-logos {
+    white-space: nowrap;
+}
+
+.edu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    
+}
+
+.edu p, .edu h4 {
+    flex-basis: 100%;
+}
+
+.cofc, .nmsu, .udemy, .bloomtech {
+    display: inline-block;
+    width: 25rem;
+    height: 20rem;
+    margin: 2.5rem auto;
+    color: #FFFFFF;
+    border-radius: 16px;
+    margin: 1.5rem;
+}
+
+.cofc {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://admissions.cofc.edu/assets/images/cofc-logo/cofc-logo-315x255.jpg);
+    background-position: center;
+    
+    
+}
+
+.nmsu {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://brand.nmsu.edu/official-university-logo/NM_State_Mark.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.udemy {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://logosandtypes.com/wp-content/uploads/2020/12/Udemy.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.bloomtech {
+    /*  */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/408/original/Bloom_Institute_of_Technology_logo.png);
+    background-position: center;
+    background-size: cover;
 }
 
 @media only screen and (min-width: 600px) {
