@@ -170,7 +170,6 @@ div.skills-logos {
 
 .programming-logo {
     display: inline;
-    height: 5rem;
     width: 5rem;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -448,8 +447,8 @@ div.edu-logos {
     }
 
     .programming-logo {
-        height: 10rem;
-        width: 10rem;
+        height: 8rem;
+        width: auto;
         margin-left: 3rem;
         margin-right: 3rem;
     }
