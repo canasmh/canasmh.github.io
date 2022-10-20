@@ -239,6 +239,12 @@ div.edu-logos {
     cursor: pointer;
 }
 
+#portfolio button:hover {
+    background-color: #FFFFFF;
+    color: #15133C;
+    border: 1px solid #15133C;
+}
+
 #portfolio a {
     width: 60%;
     font-weight: 100;
@@ -263,7 +269,6 @@ div.edu-logos {
     align-items: center;
     border-radius: 8px;
     border: 1px solid #FAFAFA;
-    box-shadow: 1px 1px 8px white;
 }
 
 .mundolm {
@@ -373,6 +378,10 @@ div.edu-logos {
         padding: 7.5% 2%;
     }
 
+    section#about {
+        padding: 5% 10%;
+    }
+
     section.about-me h3 {
         margin-top: 10rem;
     }
@@ -444,6 +453,10 @@ div.edu-logos {
 
     section {
         padding: 5% 2% 3%;
+    }
+
+    section#about {
+        padding: 5% 20%;
     }
 
     .portfolio-item {
