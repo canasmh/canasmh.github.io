@@ -1,0 +1,268 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END OF CSS RESET */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    color: #15133C; 
+}
+
+h1 {
+	font-size: 2.8rem;
+	margin-bottom: 0.8rem;
+	font-weight: 500;
+}
+
+h2 {
+	font-size: 2.0rem;
+	font-weight: 400;
+}
+
+h3 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	letter-spacing: 3px;
+	margin-bottom: 0.4rem;
+}
+
+h4 {
+	font-size: 1.6rem;
+	font-weight: 500;
+}
+
+h5 {
+	font-size: 1.4rem;
+	font-weight: 400;
+}
+
+p, li, a {
+	font-size: 1.2rem;
+	font-weight: 300;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	list-style-type: '-';
+	margin-left: 1.6rem;
+}
+
+li {
+	padding-left: 0.8rem;
+	margin-bottom: 0.4rem;
+}
+
+a:hover {
+	color: #EC994B;
+}
+
+strong {
+	font-weight: 600;
+}
+
+hr {
+	color: #15133C;
+	font-size: 3rem;
+	border: none;
+	display: flex;
+	justify-content: space-between;
+	flex-basis: 100%;
+	
+}
+
+hr::after {
+	margin: 0.8rem auto;
+	content: "...";
+	letter-spacing: 3rem;
+	
+}
+
+.sec-title {
+	background-color: #F1EEE9;
+	border-top: 2px solid #15133C;
+	border-bottom: 2px solid #15133C;
+	text-align: center;
+	padding: 0.8rem 0;
+}
+
+.sec-content {
+	padding: 1.2rem 1.6rem;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+
+/* HEADER */
+header {
+	text-align: center;
+	padding: 0.8rem 0;
+}
+
+p.motto {
+	font-size: 1rem;
+	margin-bottom: 0.8rem;
+}
+
+.soc-icons {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 1.6rem auto 0.8rem;
+}
+
+.soc-icon {
+	font-size: 1.8rem;
+}
+
+/* EDUCATION SECTION */
+.edu, .work-exp, .pub, .languages {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: space-evenly;
+}
+
+.institution, .pub-item, .language-item {
+	flex-basis: 100%;
+	width: 100%;
+	margin: 1.6rem auto;
+}
+
+/* RESEARCH SECTION */
+.research-item {
+	margin: 0.8rem auto 1.6rem;
+}
+
+.research-item:first-child {
+	margin: 1.6rem auto 0.8rem;
+}
+
+@media only screen and (min-width: 600px) {
+
+	h1 {
+		font-size: 4.8rem;
+		letter-spacing: 8px;
+	}
+
+	h2 {
+		font-size: 3.2rem;
+		letter-spacing: 8px;
+	}
+
+	h3 {
+		font-size: 2.8rem;
+	}
+
+	h4 {
+		font-size: 2.4rem;
+	}
+
+	h5 {
+		font-size: 2.0rem;
+	}
+
+	p, li, a {
+		font-size: 1.6rem;
+	}
+
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	ul {
+		margin-left: 2.4rem;
+	}
+
+	li {
+		padding-left: 0.8rem;
+	}
+
+	.sec-title {
+		padding: 1.2rem 0;
+		border-top: 1px solid #15133C;
+		border-bottom: 1px solid #15133C;
+	}
+
+	.sec-content {
+		padding: 2.4rem 4.0rem;
+	}
+
+	header {
+		padding: 1.6rem 6.4rem;
+	}
+	
+	p.motto {
+		font-size: 1.6rem;
+		margin-bottom: 1.6rem;
+		letter-spacing: 5px;
+		font-weight: 400;
+	}
+	
+	.soc-icons {
+		margin: 3.2rem auto 1.6rem;
+	}
+	
+	.soc-icon {
+		font-size: 3.2rem;
+	}
+}
