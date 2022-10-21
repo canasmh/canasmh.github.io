@@ -92,6 +92,10 @@ a:hover {
 	color: #EC994B;
 }
 
+strong {
+	font-weight: 600;
+}
+
 .sec-title {
 	background-color: #F1EEE9;
 	border-top: 2px solid #15133C;
