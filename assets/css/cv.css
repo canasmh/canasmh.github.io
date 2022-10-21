@@ -88,12 +88,39 @@ a {
 	color: inherit;
 }
 
+ul {
+	list-style-type: '-';
+	margin-left: 1.6rem;
+}
+
+li {
+	padding-left: 0.8rem;
+	margin-bottom: 0.4rem;
+}
+
 a:hover {
 	color: #EC994B;
 }
 
 strong {
 	font-weight: 600;
+}
+
+hr {
+	color: #15133C;
+	font-size: 3rem;
+	border: none;
+	display: flex;
+	justify-content: space-between;
+	flex-basis: 100%;
+	
+}
+
+hr::after {
+	margin: 0.8rem auto;
+	content: "...";
+	letter-spacing: 3rem;
+	
 }
 
 .sec-title {
