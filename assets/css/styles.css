@@ -1,302 +1,570 @@
-/* Color Styles*
-
-color: #15133C; (navy-blue)
-color: #73777B; (dark-gray)
-color: #EC994B; (light-orange)
-color: #F1EEE9; (light-gray)
-
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
 */
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-  text-align: center;
-  height: 100vh;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #F1EEE9;
-  letter-spacing: 4px;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END OF CSS RESET */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    color: #15133C; 
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 1.2rem;
 }
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 28px;
-  margin: 0;
-  font-weight: 100;
-  letter-spacing: 2px;
+    font-size: 2.3rem;
+    font-weight: 500;
+    letter-spacing: 2px;
 }
 
 h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 200;
-  font-size: 24px;
-  letter-spacing: 8px;
-  margin: 0;
+    font-size: 2.2rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+}
 
+h3 {
+    font-size: 2rem;
+    font-weight: 400;
 }
 
 p {
-  margin: 0;
+    font-weight: 300;
 }
+
 
 a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
-.main-page {
-  height: 100vh;
-  width: 100vw;
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3.5%;
+    height: 10vh;
 }
 
-.header {
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid #15133C;
+.fa-bars {
+    color: #15133C;
+    font-size: 2.3rem;
 }
 
-.first-half, .second-half {
-  height: 40vh;
+.fa-bars:hover {
+    cursor: pointer;
 }
 
-.full-page {
-  height: 80vh;
+.hide {
+    display: none;
 }
 
-.socials {
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
+nav {
+    position: absolute;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    width: 100%;
+    background-color: rgba(250, 250, 250, 1);
 }
 
-.fab {
-  font-size: 24px;
-  margin-left: 16px;
-  margin-right: 16px;
+nav a {
+    width: 100%;
+    border-top: 1px solid #15133C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
 }
 
-.navy-bg {
-  background-color: #15133C;
-  color: #F1EEE9;
+nav a:first-child {
+    border-top: none;
 }
 
-.light-bg {
-  background-color: #F1EEE9;
-  color: #15133C;
+nav a:hover {
+    color: #EC994B;
 }
 
-.dark-bg {
-  background-color: #73777B;
-  color: #EC994B;
-}
-
-.profile-pic {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 20vh;
-  width: 20vh;
-  border-radius: 100%;
-  border: 2px solid #15133C;
-}
-
-.portfolio, .contact {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 22vh;
-}
-
-.about, .cv {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 18vh;
-}
-
-.portfolio h2 {
-  margin-bottom: 8vh;
-}
-
-.contact h2 {
-  margin-top: 8vh;
-}
-
-.about:hover, .portfolio:hover {
-  background-color: #F1EEE9;
-  color: #15133C;
-}
-
-.contact {
-  border-top: 1px solid #F1EEE9;
-}
-
-.contact:hover, .cv:hover {
-  background-color: #15133C;
-  color: #F1EEE9;
-}
-
-@media only screen and (min-width: 320px) {
-  h1 {
-    font-size: 28px;
-    letter-spacing: 4px;
-    font-weight: 200;
-  }
-
-  h2 {
-    letter-spacing: 16px;
-    font-weight: 300;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  h1 {
-    font-size: 64px;
-    letter-spacing: 12px;
-  }
-
-  h2 {
-    font-size: 48px;
-    letter-spacing: 32px;
-    font-weight: 200;
-  }
-
-  .fab {
-    font-size: 48px;
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  h1 {
-    letter-spacing: 24px;
-    font-weight: 100;
-  }
-
-  h2 {
-    letter-spacing: 32px;
-    margin: 0 auto;
-    font-weight: 200;
-  }
-
-  .fab {
-    font-size: 40px;
-    margin-left: 64px;
-    margin-right: 64px;
-  }
-
-  .about, .portfolio, .contact, .cv {
-    display: inline-flex;
+/* ABOUT ME SECTION */
+section {
+    padding: 10% 5%;
     text-align: center;
-    width: 50vw;
-    height: 40vh;
-    margin: 0;
-  }
+}
+section.about-me {
+    /* height: 75vh; */
+    background:linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)), url(../images/profile-pic.png);
+    background-size: cover;
+    background-position: center;
+}
 
-  .portfolio h2, .contact h2 {
+section.about-me h3 {
+    margin: 2rem auto;
+}
+
+div.skills-logos {
+    height: 8rem;
+    max-height: 8rem;
+    white-space: nowrap;
+    margin: 2.5rem auto;
+}
+
+.programming-logo {
+    display: inline;
+    width: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+div.edu-logos {
+    white-space: nowrap;
+}
+
+.edu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    border-radius: 16px;
+}
+
+.edu p, .edu h4 {
+    flex-basis: 100%;
+}
+
+.cofc, .nmsu, .udemy, .bloomtech {
+    display: inline-block;
+    width: 25rem;
+    height: 20rem;
+    margin: 2.5rem auto;
+    color: #FFFFFF;
+    border-radius: 16px;
+    margin: 1.5rem;
+}
+
+.cofc {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://admissions.cofc.edu/assets/images/cofc-logo/cofc-logo-315x255.jpg);
+    background-position: center;
+    
+    
+}
+
+.nmsu {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://brand.nmsu.edu/official-university-logo/NM_State_Mark.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.udemy {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://logosandtypes.com/wp-content/uploads/2020/12/Udemy.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.bloomtech {
+    /*  */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/408/original/Bloom_Institute_of_Technology_logo.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/* PORTFOLIO SECTION */
+
+#portfolio {
+    background: linear-gradient(0deg, rgba(21, 19, 60, 0.5), rgba(21, 19, 60, 0.5)), url(https://blog.alexdevero.com/wp-content/uploads/2019/08/12-07-19-16-tips-to-become-a-better-programmer-pt1-blog.jpg);
+    background-position: center;
+    color: #FFFFFF;
+}
+
+#portfolio button {
+    background-color: #15133C;
+    color: #FFFFFF;
+    padding: 1.5rem 2rem;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    letter-spacing: 3px;
+}
+
+#portfolio button:hover {
+    background-color: #FFFFFF;
+    color: #15133C;
+    border: 1px solid #15133C;
+}
+
+#portfolio a {
+    width: 60%;
+    font-weight: 100;
+}
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.portfolio-item {
+    flex-basis: 100%;
+    height: 20rem;
+    max-Width: 80%;
+    margin: 3rem auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #FAFAFA;
+}
+
+.mundolm {
+    /* assets/images/mundolm.png */
+    background: linear-gradient(0deg, rgba(21, 19, 60, 0.8), rgba(21, 19, 60, 0.8)), url(../images/mundolm.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.three-brothers {
+    background: linear-gradient(0deg, rgba(21, 19, 60, 0.8), rgba(21, 19, 60, 0.8)), url(../images/3protherspainting.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.networthdle {
+    background: linear-gradient(0deg, rgba(21, 19, 60, 0.8), rgba(21, 19, 60, 0.8)), url(../images/networthdle.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.uscucei {
+    background: linear-gradient(0deg, rgba(21, 19, 60, 0.8), rgba(21, 19, 60, 0.8)), url(../images/USCUCEI.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.mundolm:hover {
+    /* assets/images/mundolm.png */
+    background: linear-gradient(0deg,rgba(2, 0, 41, 0.8), rgba(2, 0, 41, 0.8)), url(../images/mundolm.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.three-brothers:hover {
+    /* assets/images/mundolm.png */
+    background: linear-gradient(0deg,rgba(2, 0, 41, 0.8), rgba(2, 0, 41, 0.8)), url(../images/3protherspainting.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.networthdle:hover {
+    /* assets/images/mundolm.png */
+    background: linear-gradient(0deg,rgba(2, 0, 41, 0.8), rgba(2, 0, 41, 0.8)), url(../images/networthdle.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.uscucei:hover {
+    /* assets/images/mundolm.png */
+    background: linear-gradient(0deg,rgba(2, 0, 41, 0.8), rgba(2, 0, 41, 0.8)), url(../images/USCUCEI.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.portfolio-item img {
+    height: 20rem;
+    display: block;
     margin: 0 auto;
-  }
-
-  .about, .contact {
-    float: left;
-  }
-
-  .portfolio, .cv {
-    float: right;
-  }
-
-  .contact, .cv {
-    border-top: 2px solid #F1EEE9;
-  }
-
-  .about, .portfolio {
-    border-bottom: 2px solid #15133C;
-  }
+    border-radius: 12px;
+    border: 1px solid #FFFFFF;
 }
 
-.motto-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 15vh;
+/* CONTACT SECTION */
+
+#contact p {
+    margin-bottom: 3.5rem;
 }
 
-hr {
-  width: 50%;
-  margin: 15px auto;
-  border: 0.2px solid #F1EEE9;;
-  color: #F1EEE9;
+.soc-icon {
+    font-size: 3.5rem;
+    margin: 2.5rem;
+    cursor: pointer;
 }
 
-h2.motto {
-  font-weight: 400;
-  font-size: 42px;
-  padding-top: 25px;
-  margin-bottom: 25px;
+.soc-icon:hover {
+    color: #EC994B;
 }
 
-.motto-item h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 200;
-  font-size: 32px;
-  letter-spacing: 15px;
-  margin: 0;
+/* CV SECTION */
+#cv {
+    background-color: #15133C;
+    color: #FFFFFF;
 }
 
-.em {
-  font-weight: 600!important;
+#cv button {
+    padding: 16px 14px;
+    width: 70%;
+    font-weight: 500;
+    letter-spacing: 5px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+    color: #FFF;
+    background-color:#15133C;
+    border: 1px solid #FFF;
+}
+
+#cv button:hover {
+    background-color: #EC994B;
+    color:#fff;
+    border: 1px solid #fff;
+}
+
+#cv div.cv-buttons button {
+    margin-top: 0;
+    background-color: #FFFFFF;
+    color: #15133C;
+    border-radius: 1px solid #15133C;
+}
+
+#cv div.cv-buttons button:hover {
+    background-color: #EC994B;
+    color:#fff;
+    border: 1px solid #fff;
+}
+
+/* FOOTER */ 
+footer {
+    font-size: 1rem;
+    padding: 5%;
+    text-align: center;
+    letter-spacing: 3px;
 }
 
 @media only screen and (min-width: 600px) {
-  h2.motto {
-    padding-top: 40px;
-    font-weight: 400;
-    font-size: 64px;
-  }
-  .motto-item {
-    height: 18vh;
-  }
+    h1 {
+        font-size: 3.7rem;
+        letter-spacing: 12px;
+    }
+    h2 {
+        font-size: 3.4rem;
+    }
+    
+    h3 {
+        font-size: 3.0rem;
+    }
 
-  .motto-item h3 {
-    font-size: 56px;
-    letter-spacing: 15px;
-  }
+    h4 {
+        font-size: 2.7rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 1.6rem;
+    }
+
+    .fa-bars {
+        font-size: 3.7rem;
+    }
+
+    nav a {
+        font-size: 2.5rem;
+    }
+
+    section {
+        padding: 7.5% 2%;
+    }
+
+    section#about {
+        padding: 5% 10%;
+    }
+
+    section.about-me h3 {
+        margin-top: 10rem;
+    }
+
+    div.skills-logos {
+        height: 10rem;
+        max-height: 10rem;
+        margin: 3.5rem auto;
+    }
+
+    .programming-logo {
+        height: 8rem;
+        width: auto;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .cofc, .nmsu, .udemy, .bloomtech {
+        width: 35rem;
+        height: 30rem;
+        margin: 3rem;
+    }
+
+    .portfolio-item {
+        flex-basis: 35%;
+        height: 25rem;
+        margin: 5rem;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .soc-icon {
+        font-size: 8rem;
+        margin: 3.5rem;
+    }
+
+    #cv button {
+        width: 35%;
+        margin: 5rem 2.5rem 1rem;
+        padding: 2.5rem 0;
+    }
+
+    footer {
+        font-size: 1.2rem;
+        padding: 3%;
+        letter-spacing: 5px;
+    }
 }
 
 @media only screen and (min-width: 900px) {
-  h2.motto {
-    padding-top: 32px;
-    font-weight: 400;
-    font-size: 56px;
-  }
-  .motto-item {
-    height: 16vh;
-  }
+    h1 {
+        font-size: 4rem;
+        font-weight: 400;
+        letter-spacing: 16px;
+    }
 
-  .motto-item h3 {
-    font-size: 48px;
-    letter-spacing: 15px;
-  }
+    button {
+        font-size: 2rem;
+    }
 
-  hr {
-    width: 30%;
-  }
+    .fa-bars {
+        display: none;
+    }
 
-  .em {
-    font-weight: 500!important;
-  }
-}
+    .header-container {
+        display: flex;
+        justify-content: center;
+    }
 
-.coming-soon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    nav {
+        position: static;
+        display: flex;
+        flex-flow: row nowrap;
+        border-top: 1px solid #15133C;
+        justify-content: space-evenly;
+        align-items: center;
+        border-bottom: 1px solid #15133C;
+        height: 8vh;
+    }
+
+    nav a {
+        width: auto;
+        border-top: none;
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 5% 2% 3%;
+    }
+
+    section#about {
+        padding: 5% 20%;
+    }
+
+    .portfolio-item {
+        flex-basis: 25%;
+        height: 30rem;
+        margin: 8rem 5rem;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mundolm:hover, .uscucei:hover, .three-brothers:hover, .networthdle:hover {
+        box-shadow: 1px 1px 18px white;
+    }
+
+    .soc-icon {
+        font-size: 12.5rem;
+        margin: 6rem;
+    }
+
+    #cv button {
+        width: 25%;
+        margin: 5rem 3.2rem 1rem;
+        padding: 2.5rem 0;
+    }
+
+    footer {
+        padding: 2%;
+        letter-spacing: 12px;
+    }
 }
