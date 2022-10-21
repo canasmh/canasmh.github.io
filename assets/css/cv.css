@@ -108,6 +108,10 @@ strong {
 	padding: 1.2rem 1.6rem;
 }
 
+.hidden {
+	visibility: hidden;
+}
+
 
 /* HEADER */
 header {
@@ -121,8 +125,23 @@ p.motto {
 }
 
 .soc-icons {
+	font-size: 2rem;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
 	margin-bottom: 0.8rem;
+}
+
+/* EDUCATION SECTION */
+div.edu {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: space-evenly;
+}
+
+.institution {
+	flex-basis: 100%;
+	width: 100%;
+	margin: 0.8rem auto;
 }
