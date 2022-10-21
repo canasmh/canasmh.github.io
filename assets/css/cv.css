@@ -86,7 +86,7 @@ h4 {
 
 h5 {
 	font-size: 1.4rem;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 p, li, a {
@@ -174,14 +174,14 @@ p.motto {
 }
 
 /* EDUCATION SECTION */
-.edu, .work-exp, .pub {
+.edu, .work-exp, .pub, .languages {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
 	align-items: space-evenly;
 }
 
-.institution, .pub-item {
+.institution, .pub-item, .language-item {
 	flex-basis: 100%;
 	width: 100%;
 	margin: 1.6rem auto;
