@@ -79,8 +79,19 @@ h3 {
 	margin-bottom: 0.4rem;
 }
 
+h4 {
+	font-size: 1.6rem;
+	font-weight: 500;
+}
+
+h5 {
+	font-size: 1.4rem;
+	font-weight: 300;
+}
+
 p, li, a {
 	font-size: 1.2rem;
+	font-weight: 300;
 }
 
 a {
@@ -163,7 +174,7 @@ p.motto {
 }
 
 /* EDUCATION SECTION */
-div.edu {
+div.edu, div.work {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
