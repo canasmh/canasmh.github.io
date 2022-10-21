@@ -174,14 +174,14 @@ p.motto {
 }
 
 /* EDUCATION SECTION */
-div.edu, div.work {
+.edu, .work-exp, .pub {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
 	align-items: space-evenly;
 }
 
-.institution {
+.institution, .pub-item {
 	flex-basis: 100%;
 	width: 100%;
 	margin: 1.6rem auto;
