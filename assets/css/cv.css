@@ -152,11 +152,14 @@ p.motto {
 }
 
 .soc-icons {
-	font-size: 2rem;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-items: center;
-	margin-bottom: 0.8rem;
+	margin: 1.6rem auto 0.8rem;
+}
+
+.soc-icon {
+	font-size: 1.8rem;
 }
 
 /* EDUCATION SECTION */
