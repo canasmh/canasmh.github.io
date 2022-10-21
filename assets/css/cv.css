@@ -175,3 +175,12 @@ div.edu {
 	width: 100%;
 	margin: 0.8rem auto;
 }
+
+/* RESEARCH SECTION */
+.research-item {
+	margin: 0.8rem auto 1.6rem;
+}
+
+.research-item:first-child {
+	margin: 1.6rem auto 0.8rem;
+}
