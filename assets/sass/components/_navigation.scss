@@ -1,0 +1,30 @@
+.nav-section {
+    padding: 0.9rem;
+    
+    border-top: 1px solid $color-primary;
+    border-bottom: 1px solid $color-primary;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $color-light-gray;
+    font-size: 2rem;
+
+    &__nav-item {
+        padding: 0.8rem;
+        &:link,
+        &:visited {
+            padding: 0.5rem;
+            text-decoration: none;
+            color: $color-primary;
+            transition: all 0.1s ease;
+        }
+
+        &:hover {
+            padding-bottom: calc(0.04rem - 1px);
+            color: $color-orange;
+            border-bottom: 1px solid $color-orange;
+        }
+        
+    }
+
+
+}
