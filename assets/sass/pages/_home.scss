@@ -15,3 +15,9 @@
     }
 }
 
+.about-section {
+    padding: 10rem 15rem 15rem;
+    background-image: linear-gradient(to bottom right, rgba($color-light-gray, 1), rgba($color-dark-gray, 0.2));
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
