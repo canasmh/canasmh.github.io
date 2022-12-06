@@ -1,6 +1,7 @@
 .header-section {
     padding: 1rem;
     text-align: center;
+    background-image: linear-gradient(to right bottom, rgba($color-dark-gray, 0.1), rgba($color-light-gray, 1));
     &__heading {
         font-weight: 300;
         letter-spacing: 16px;
