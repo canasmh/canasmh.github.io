@@ -1,0 +1,16 @@
+.header-section {
+    padding: 1rem;
+    text-align: center;
+    &__heading {
+        font-weight: 300;
+        letter-spacing: 15px;
+        font-size: 4.8rem;
+        transition: all 0.5s;
+        text-transform: uppercase;
+    }
+
+    &__heading:hover {
+        letter-spacing: 20px;
+    }
+}
+
