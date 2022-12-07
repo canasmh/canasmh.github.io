@@ -1,0 +1,152 @@
+.card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 48rem;
+    border-radius: 20px;
+    padding: 0 10rem;
+
+    &__heading {
+        font-size: 3rem;
+        text-align: center;
+        font-weight: 200;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    &__side {
+        height: 48rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.8s ease;
+
+        &--front {
+            color: #FFF;
+            &-2 {
+                background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary);
+            }
+
+            &-1 {
+                background-image: linear-gradient(to bottom right, $color-orange, $color-orange-dark);
+            }
+
+            &-3 {
+                background-image: linear-gradient(to bottom right, $color-purple, $color-purple-dark);
+            }
+        }
+
+        &--back {
+            transform: rotateY(180deg);
+            background-color: #FFF;
+            padding: 3rem 5rem;
+        }
+
+        &--list {
+            text-align: center;
+            list-style: none;
+
+            & > * {
+                padding: 3rem 0;
+                letter-spacing: 2px;
+                font-size: 1.5rem;
+                line-height: 1.5;
+                font-weight: 300;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid darken($color-light-gray, 20%);
+                }
+            }
+
+        }
+
+        &--button {
+            display: inline-block;
+            padding: 1.2rem 2.5rem;
+            font-size: 1.6rem;
+            font-weight: 400;
+            cursor: pointer;
+            letter-spacing: 3px;
+            font-family: $default-font-family;
+            text-transform: uppercase;
+            border-radius: 100px;
+            transition: all 0.3s;
+
+            &:hover {
+                transform: translateY(-0.6rem) scale(1.02);
+                box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+            }
+
+            &:active {
+                transform: translateY(-0.4rem) scale(1.01);
+                box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
+            }
+
+            &-1 {
+                &,
+                &:link,
+                &:visited {
+                    background-color: #FFF;
+                    color: $color-orange;
+                    border: 2px solid $color-orange;
+                }
+
+                &:hover {
+                    background-color: darken($color-orange, 15%);
+                    color: #FEFEFE;
+                    border: 2px solid darken($color-orange, 15%);
+                }
+            }
+
+            &-2 {
+                &,
+                &:link,
+                &:visited {
+                    background-color: #FFF;
+                    color: $color-primary-light;
+                    border: 2px solid $color-primary-light;
+                }
+
+                &:hover {
+                    background-color: darken($color-primary-light, 15%);
+                    color: #FEFEFE;
+                    border: 2px solid darken($color-primary-light, 15%);
+                }
+            }
+
+            &-3 {
+                &,
+                &:link,
+                &:visited {
+                    background-color: #FFF;
+                    color: $color-purple;
+                    border: 2px solid $color-purple;
+                }
+
+                &:hover {
+                    background-color: darken($color-purple, 15%);
+                    color: #FEFEFE;
+                    border: 2px solid darken($color-purple, 15%);
+                }
+            }
+            
+        }
+    }
+
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0deg);
+    }
+}

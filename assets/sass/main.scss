@@ -8,7 +8,10 @@
 @import "./base/typography";
 @import "./base/utilities";
 
+@import "./components/card";
 @import "./components/navigation";
 @import "./components/profile-box";
 
+
+@import "./layout/grid";
 @import "./pages/home"
