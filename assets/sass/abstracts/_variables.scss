@@ -4,7 +4,16 @@ $default-font-size: 1.6rem;
 $default-font-family: 'Montserrat', sans-serif;
 
 // COLORS
-$color-primary: #15133C;
+$color-primary: #15133c;
+$color-primary-light: #3C37AB;
 $color-light-gray: #F1EEE9;
 $color-dark-gray: #73777B;
 $color-orange: #EC994B;
+$color-orange-dark: #D48944;
+$color-purple: #A531E0;
+$color-purple-dark: #7723A1;
+
+// GRID
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 10rem;
