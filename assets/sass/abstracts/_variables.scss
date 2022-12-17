@@ -4,7 +4,25 @@ $default-font-size: 1.6rem;
 $default-font-family: 'Montserrat', sans-serif;
 
 // COLORS
-$color-primary: #15133C;
+$color-white: #FFF;
+$color-black: #000;
+
+$color-primary: #15133c;
+$color-primary-light: lighten(#15133c, 10%);
+$color-primary-dark: darken(#15133c, 10%);
+
+$color-secondary: #EC994B;
+$color-secondary-light: lighten(#EC994B, 10%);
+$color-secondary-dark: darken(#EC994B, 10%);
+
+$color-tertiary: #A531E0;
+$color-tertiary-light: lighten(#A531E0, 10%);
+$color-tertiary-dark: darken(#A531E0, 10%);
+
 $color-light-gray: #F1EEE9;
 $color-dark-gray: #73777B;
-$color-orange: #EC994B;
+
+// GRID
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 10rem;
