@@ -4,7 +4,7 @@
 }
 
 .card {
-    flex: 0 0 25%;
+    flex: 0 0 30rem;
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
@@ -12,6 +12,10 @@
     border-radius: 20px;
     padding: 0 10rem;
     transform: translateY(-50%);
+    
+    &:not(:last-child) {
+        margin-right: 2.5rem;
+    }
 
     &__heading {
         font-size: 3rem;
