@@ -33,15 +33,15 @@
         &--front {
             color: #FFF;
             &-2 {
-                background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary);
+                background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
             }
 
             &-1 {
-                background-image: linear-gradient(to bottom right, $color-orange, $color-orange-dark);
+                background-image: linear-gradient(to bottom right, $color-secondary-light, $color-secondary-dark);
             }
 
             &-3 {
-                background-image: linear-gradient(to bottom right, $color-purple, $color-purple-dark);
+                background-image: linear-gradient(to bottom right, $color-tertiary-light, $color-tertiary-dark);
             }
         }
 
@@ -96,14 +96,14 @@
                 &:link,
                 &:visited {
                     background-color: #FFF;
-                    color: $color-orange;
-                    border: 2px solid $color-orange;
+                    color: $color-secondary;
+                    border: 2px solid $color-secondary;
                 }
 
                 &:hover {
-                    background-color: darken($color-orange, 15%);
+                    background-color: $color-secondary-dark;
                     color: #FEFEFE;
-                    border: 2px solid darken($color-orange, 15%);
+                    border: 2px solid $color-secondary-dark;
                 }
             }
 
@@ -112,14 +112,14 @@
                 &:link,
                 &:visited {
                     background-color: #FFF;
-                    color: $color-primary-light;
-                    border: 2px solid $color-primary-light;
+                    color: $color-primary;
+                    border: 2px solid $color-primary;
                 }
 
                 &:hover {
-                    background-color: darken($color-primary-light, 15%);
+                    background-color: $color-primary-dark;
                     color: #FEFEFE;
-                    border: 2px solid darken($color-primary-light, 15%);
+                    border: 2px solid $color-primary-dark;
                 }
             }
 
@@ -128,14 +128,14 @@
                 &:link,
                 &:visited {
                     background-color: #FFF;
-                    color: $color-purple;
-                    border: 2px solid $color-purple;
+                    color: $color-tertiary;
+                    border: 2px solid $color-tertiary;
                 }
 
                 &:hover {
-                    background-color: darken($color-purple, 15%);
+                    background-color: $color-tertiary-dark;
                     color: #FEFEFE;
-                    border: 2px solid darken($color-purple, 15%);
+                    border: 2px solid $color-tertiary-dark;
                 }
             }
             
