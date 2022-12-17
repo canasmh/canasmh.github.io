@@ -1,0 +1,127 @@
+.cover-card {
+    flex: 0 0 30rem;
+    border: 2px solid $color-secondary;
+    border-radius: 15px;
+    height: 50rem;
+    margin-bottom: 6rem;
+    position: relative;
+    border: 2px solid $color-primary;
+    overflow: hidden;
+    perspective: 300rem;
+    -moz-perspective: 300rem;
+
+    &:not(:last-child) {
+        margin-right: 5rem;
+    }
+
+    &__cover {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        line-height: 2.5;
+        top: 0;
+        left: 0;
+        padding: 0 5rem;
+        
+        transition: all 0.5s ease-out;
+
+        &--1 {
+            background-image: linear-gradient(to right, rgba($color-black, 0.8), rgba($color-black, 0.8)), url("../images/networthdle.png");
+            background-size:contain;
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right, rgba($color-black, 0.8), rgba($color-black, 0.8)), url("../images/mundolm.png");
+            background-size:contain;
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right, rgba($color-black, 0.8), rgba($color-black, 0.8)), url("../images/3brotherspainting.png");
+            background-size:contain;
+        }
+
+        &--4 {
+            background-image: linear-gradient(to right, rgba($color-black, 0.8), rgba($color-black, 0.8)), url("../images/USCUCEI.png");
+            background-size:contain;
+        }
+
+        &--5 {
+            background-image: linear-gradient(to right, rgba($color-black, 0.8), rgba($color-black, 0.8)), url("../images/foothillspg.png");
+            background-size:contain;
+        }
+    }
+
+    &__heading {
+        text-transform: uppercase;
+        font-weight: 300;
+        letter-spacing: 5px;
+        color: $color-light-gray;
+    }
+
+    &__content {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+        padding: 3rem;
+        transform: translateY(100%) rotateX(-135deg);
+        transition: all 0.5s ease-out;
+
+        &--heading {
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            font-size: 1.6rem;
+        }
+
+        &--text {
+            margin-bottom: 0.8rem;
+            font-size: 1.4rem;
+        }
+    }
+
+    &__icon-container {
+        margin-top: 4rem;
+        text-align: center;
+    }
+
+    &__icon {
+        font-size: 3.5rem;
+        cursor: pointer;
+        
+        &:not(:last-child) {
+            margin-right: 3.5rem;
+        }
+    }
+
+    &:hover &__cover {
+        transform: translateY(-100%) rotateX(135deg);
+    }
+
+    &:hover &__content {
+        transform: translateY(0) rotateX(0);
+    }
+    
+}
+
+// <div class="cover-card__cover cover-card__cover--5">
+//     <h3 class="cover-card__heading">NetWorthdle</h3>
+// </div>
+// <div class="cover-card__content">
+//     <h3 class="cover-card__content--heading">Client</h3>
+//     <p class="cover-card__content--text">Original Project | Myself</p>
+//     <h3 class="cover-card__content--heading">Tech</h3>
+//     <p class="cover-card__content--text">Python, SeleniumPy, MongoAtlas, ReactJS, Bootstrap</p>
+//     <h3 class="cover-card__content--heading">Description</h3>
+//     <p class="cover-card__content--text">Puzzle game where users have four tries to correctly guess the networth of a given celebrity</p>
+//     <div class="cover-card__icon-container">
+//         <i class="fa-brands fa-github cover-card__icon"></i>
+//         <i class="fa-regular fa-window cover-card__icon"></i>
+//     </div>
+// </div>
+
