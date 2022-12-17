@@ -84,6 +84,32 @@ body {
 .u-margin-bottom-xxs {
   margin-bottom: 0.5rem !important; }
 
+.btn-outline {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); }
+  .btn-outline, .btn-outline:link, .btn-outline:visited {
+    padding: 2rem 5rem;
+    letter-spacing: 5px;
+    border-radius: 50px;
+    color: #F1EEE9;
+    border: 1px solid #F1EEE9;
+    text-transform: uppercase;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all 0.5s; }
+  .btn-outline:hover {
+    transform: translate(-50%, -0.7rem) scale(1.05);
+    background-color: #0c0a21;
+    color: #ddd6ca;
+    border: 1px solid #ddd6ca; }
+  .btn-outline:active {
+    transform: translate(-50%, -0.4rem) scale(1.02);
+    background-color: #0e0d29;
+    color: #e7e2d9;
+    border: 1px solid #e7e2d9; }
+
 .cards-container {
   display: flex;
   justify-content: space-between; }
@@ -308,21 +334,21 @@ body {
     font-weight: 300;
     font-size: 5.6rem;
     letter-spacing: 25px;
-    animation: slideInLeft 1.5s ease-in-out; }
+    animation: slideInLeft 1.5s ease-out; }
     .landing-page__heading span {
       color: #EC994B; }
   .landing-page__text {
     font-weight: 300;
     font-size: 2.4rem;
     letter-spacing: 10px;
-    animation: slideInRight 1.5s ease-in-out; }
+    animation: slideInRight 1.5s ease-out; }
     .landing-page__text span {
       color: #EC994B; }
   .landing-page__icon {
     position: absolute;
     bottom: 10rem;
     font-size: 6.4rem;
-    animation: slideUp 1.5s ease-in-out 1.8s;
+    animation: slideUp 1.5s ease-out 1.8s;
     animation-fill-mode: backwards;
     transition: all 0.5s;
     cursor: pointer; }
@@ -338,4 +364,28 @@ body {
 
 .skills {
   background-image: linear-gradient(to bottom right, #231f63, #070715);
-  padding: 0 10rem 8rem; }
+  padding: 0 10rem 15rem; }
+
+.tech-spec__container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+  .tech-spec__container--wrapper {
+    flex: 0 0 35rem;
+    padding: 3rem 0;
+    text-align: center; }
+
+.tech-spec__heading {
+  color: #EC994B;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-weight: 400;
+  margin-bottom: 3rem; }
+
+.tech-spec__list {
+  color: #F1EEE9;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 2.5; }
