@@ -65,5 +65,38 @@
 
 .skills {
     background-image: $dark-bg;
-    padding: 0 10rem 8rem;
+    padding: 0 10rem 15rem;
+}
+
+
+.tech-spec {
+
+    &__container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        &--wrapper {
+            flex: 0 0 35rem;
+            padding: 3rem 0;
+            text-align: center;
+        }
+    }
+
+    &__heading {
+        color: $color-secondary;
+        font-size: 3.2rem;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        font-weight: 400;
+        margin-bottom: 3rem;
+    }
+
+    &__list {
+        color: $color-light-gray;
+        list-style-type: none;
+        text-transform: uppercase;
+        font-size: 2rem;
+        line-height: 2.5;
+    }
 }
