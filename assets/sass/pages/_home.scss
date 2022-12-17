@@ -1,6 +1,6 @@
 .landing-page {
     height: 100vh;
-    background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
+    background-image: $dark-bg;
     color: $color-light-gray;
     display: flex;
     justify-content: center;
@@ -57,4 +57,13 @@
             color: $color-secondary-dark;
         }
     }
+}
+
+.about {
+    padding: 8rem 10rem 25rem;
+}
+
+.skills {
+    background-image: $dark-bg;
+    padding: 0 10rem 8rem;
 }
