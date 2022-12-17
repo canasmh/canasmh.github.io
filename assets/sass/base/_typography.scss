@@ -16,14 +16,11 @@ body {
     text-transform: uppercase;
     transition: all 0.5s;
 
+    &--light {
+        color: $color-light-gray;
+    }
+
     &:hover {
         letter-spacing: 20px;
     }
-}
-
-.heading-tertiary {
-    text-transform: uppercase;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 2px;
 }

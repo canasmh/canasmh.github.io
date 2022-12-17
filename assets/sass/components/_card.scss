@@ -1,10 +1,21 @@
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .card {
+    flex: 0 0 30rem;
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
     height: 48rem;
     border-radius: 20px;
     padding: 0 10rem;
+    transform: translateY(-50%);
+    
+    &:not(:last-child) {
+        margin-right: 2.5rem;
+    }
 
     &__heading {
         font-size: 3rem;
@@ -29,6 +40,7 @@
         justify-content: center;
         align-items: center;
         transition: all 0.8s ease;
+        border: 1px solid $color-light-gray;
 
         &--front {
             color: #FFF;
@@ -48,7 +60,7 @@
         &--back {
             transform: rotateY(180deg);
             background-color: #FFF;
-            padding: 3rem 5rem;
+            padding: 3rem;
         }
 
         &--list {

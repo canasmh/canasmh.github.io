@@ -1,6 +1,6 @@
 .landing-page {
     height: 100vh;
-    background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
+    background-image: $dark-bg;
     color: $color-light-gray;
     display: flex;
     justify-content: center;
@@ -20,7 +20,7 @@
         font-weight: 300;
         font-size: 5.6rem;
         letter-spacing: 25px;
-        animation: slideInLeft 1.5s ease-in-out;
+        animation: slideInLeft 1.5s ease-out;
 
         span {
             color: $color-secondary;
@@ -31,7 +31,7 @@
         font-weight: 300;
         font-size: 2.4rem;
         letter-spacing: 10px;
-        animation: slideInRight 1.5s ease-in-out;
+        animation: slideInRight 1.5s ease-out;
 
         span {
             color: $color-secondary;
@@ -42,7 +42,7 @@
         position: absolute;
         bottom: 10rem;
         font-size: 6.4rem;
-        animation: slideUp 1.5s ease-in-out 1.8s;
+        animation: slideUp 1.5s ease-out 1.8s;
         animation-fill-mode: backwards;
         transition: all 0.5s;
         cursor: pointer;
@@ -56,5 +56,47 @@
             transform: scale(1.05) translateY(-0.5rem);
             color: $color-secondary-dark;
         }
+    }
+}
+
+.about {
+    padding: 8rem 10rem 25rem;
+}
+
+.skills {
+    background-image: $dark-bg;
+    padding: 0 10rem 15rem;
+}
+
+
+.tech-spec {
+
+    &__container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        &--wrapper {
+            flex: 0 0 35rem;
+            padding: 3rem 0;
+            text-align: center;
+        }
+    }
+
+    &__heading {
+        color: $color-secondary;
+        font-size: 3.2rem;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        font-weight: 400;
+        margin-bottom: 3rem;
+    }
+
+    &__list {
+        color: $color-light-gray;
+        list-style-type: none;
+        text-transform: uppercase;
+        font-size: 2rem;
+        line-height: 2.5;
     }
 }
