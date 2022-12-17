@@ -1,6 +1,7 @@
 .cards-container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
@@ -12,9 +13,10 @@
     border-radius: 20px;
     padding: 0 10rem;
     transform: translateY(-50%);
+    margin-bottom: 5rem;
     
     &:not(:last-child) {
-        margin-right: 2.5rem;
+        margin-right: 5rem;
     }
 
     &__heading {
