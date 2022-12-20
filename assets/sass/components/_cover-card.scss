@@ -112,7 +112,10 @@
             transform: scale(1.3);
         }
 
-
+        &:active {
+            color: $color-secondary-dark;
+            transform: scale(1.15);
+        }
     }
 
     &__icon {
@@ -127,22 +130,4 @@
     &:hover &__content {
         transform: translateY(0) rotateX(0) scale(1);
     }
-    
 }
-
-// <div class="cover-card__cover cover-card__cover--5">
-//     <h3 class="cover-card__heading">NetWorthdle</h3>
-// </div>
-// <div class="cover-card__content">
-//     <h3 class="cover-card__content--heading">Client</h3>
-//     <p class="cover-card__content--text">Original Project | Myself</p>
-//     <h3 class="cover-card__content--heading">Tech</h3>
-//     <p class="cover-card__content--text">Python, SeleniumPy, MongoAtlas, ReactJS, Bootstrap</p>
-//     <h3 class="cover-card__content--heading">Description</h3>
-//     <p class="cover-card__content--text">Puzzle game where users have four tries to correctly guess the networth of a given celebrity</p>
-//     <div class="cover-card__icon-container">
-//         <i class="fa-brands fa-github cover-card__icon"></i>
-//         <i class="fa-regular fa-window cover-card__icon"></i>
-//     </div>
-// </div>
-
