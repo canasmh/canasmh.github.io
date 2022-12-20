@@ -98,14 +98,14 @@ body {
     text-transform: uppercase;
     margin: 0 auto;
     cursor: pointer;
-    transition: all 0.5s; }
+    transition: all 0.4s; }
   .btn-outline:hover {
-    transform: translate(-50%, -0.7rem) scale(1.05);
+    transform: translate(-50%, -0.8rem);
     background-color: #0c0a21;
     color: #ddd6ca;
     border: 1px solid #ddd6ca; }
   .btn-outline:active {
-    transform: translate(-50%, -0.4rem) scale(1.02);
+    transform: translate(-50%, -0.6rem);
     background-color: #0e0d29;
     color: #e7e2d9;
     border: 1px solid #e7e2d9; }
@@ -267,11 +267,14 @@ body {
   .cover-card__content {
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: absolute;
     top: 0;
     left: 0;
     padding: 3rem;
-    transform: translateY(100%) rotateX(-135deg);
+    transform: translateY(100%) rotateX(-135deg) scale(0.8);
     transition: all 0.5s ease-out; }
     .cover-card__content--heading {
       margin-bottom: 0.5rem;
@@ -283,15 +286,22 @@ body {
   .cover-card__icon-container {
     margin-top: 4rem;
     text-align: center; }
+  .cover-card__link:not(:last-child) {
+    margin-right: 3.5rem; }
+  .cover-card__link, .cover-card__link:visited, .cover-card__link:link {
+    color: #15133c;
+    display: inline-block;
+    transition: all 0.3s; }
+  .cover-card__link:hover {
+    color: #EC994B;
+    transform: scale(1.3); }
   .cover-card__icon {
     font-size: 3.5rem;
     cursor: pointer; }
-    .cover-card__icon:not(:last-child) {
-      margin-right: 3.5rem; }
   .cover-card:hover .cover-card__cover {
-    transform: translateY(-100%) rotateX(135deg); }
+    transform: translateY(-100%) rotateX(135deg) scale(1.2); }
   .cover-card:hover .cover-card__content {
-    transform: translateY(0) rotateX(0); }
+    transform: translateY(0) rotateX(0) scale(1); }
 
 .navigation {
   padding: 5rem 10rem;
