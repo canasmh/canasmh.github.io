@@ -15,18 +15,18 @@
         text-transform: uppercase;
         margin: 0 auto;
         cursor: pointer;
-        transition: all 0.5s;
+        transition: all 0.4s;
     }
 
     &:hover {
-        transform: translate(-50%, -0.7rem) scale(1.05);
+        transform: translate(-50%, -0.8rem);
         background-color: darken($color-primary, 7%);
         color: darken($color-light-gray, 10%);
         border: 1px solid darken($color-light-gray, 10%);
     }
 
     &:active {
-        transform: translate(-50%, -0.4rem) scale(1.02);
+        transform: translate(-50%, -0.6rem);
         background-color: darken($color-primary, 5%);
         color: darken($color-light-gray, 5%);
         border: 1px solid darken($color-light-gray, 5%);
