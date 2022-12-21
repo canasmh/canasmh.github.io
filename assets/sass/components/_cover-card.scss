@@ -27,7 +27,7 @@
         left: 0;
         padding: 0 5rem;
         
-        transition: all 0.5s ease-out;
+        transition: all 0.6s ease-out 0.2s;
 
         &--1 {
             background-image: linear-gradient(to right, rgba($color-black, 0.8), rgba($color-black, 0.8)), url("../images/networthdle.png");
@@ -74,7 +74,7 @@
         
         padding: 3rem;
         transform: translateY(100%) rotateX(-135deg) scale(0.8);
-        transition: all 0.5s ease-out;
+        transition: all 0.6s ease-out 0.2s;
 
         &--heading {
             margin-bottom: 0.5rem;
