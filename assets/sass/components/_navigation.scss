@@ -1,0 +1,183 @@
+.navigation {
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__button {
+        background-color: $color-light-gray;
+        height: 7rem;
+        width: 7rem;
+        position: fixed;
+        top: 6rem;
+        right: 6rem;
+        border-radius: 50%;
+        z-index: 1000;
+        box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
+        text-align: center;
+        cursor: pointer;
+        border: 1px solid $color-primary-dark;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: fadeIn 1.5s ease-out 1.8s, slideUp 1.5s ease-out 1.8s;
+        animation-fill-mode: backwards;
+
+        @include respond(tab-port) {
+            top: 2.5rem;
+            right: 2.5rem;
+        }
+    }
+
+    &__background {
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        position: fixed;
+        top: 6.5rem;
+        right: 6.5rem;
+        background-image: radial-gradient($color-primary-light, $color-primary-dark);
+        z-index: 100;
+        transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+        animation: fadeIn 1.5s ease-out 1.8s, slideUp 1.5s ease-out 1.8s;
+        animation-fill-mode: backwards;
+
+        @include respond(tab-port) {
+            top: 3rem;
+            right: 3rem;
+        }
+    }
+
+    &__nav {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: -50%;
+        z-index: 500;
+        opacity: 0;
+        width: 0;
+        transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    &__list {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        list-style: none;
+        text-align: center;
+    }
+
+    &__item {
+        margin: 1.5rem;
+
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+        }
+
+        @include respond(tab-port) {
+            &:not(:last-child) {
+                margin-bottom: 5rem;
+            }
+        }
+    }
+
+    &__link {
+        &:link, 
+        &:visited {
+            display: inline-block;
+            font-size: 3rem;
+            font-weight: 300;
+            padding: 1rem 2rem;
+            color: $color-white;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: all 0.4s;
+            letter-spacing: 7px;
+
+            span {
+                margin-right: 1.5rem;
+                display: inline-block;
+            }
+        }
+
+        &:hover,
+        &:active {
+            background-position: 100%;
+            color: $color-secondary;
+            letter-spacing: 10px;
+        }
+    }
+
+    &__checkbox:checked ~ &__background {
+        transform: scale(60);
+    }
+
+    &__checkbox:checked ~ &__nav {
+        left: 0;
+        opacity: 1;
+        width: 100vw;
+    }
+
+    //ICON
+    &__icon {
+        position: relative;
+        &,
+        &::before,
+        &::after {
+            width: 3rem;
+            height: 2px;
+            display: inline-block;
+            background-color: $color-primary;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: all 0.3s;
+        }
+
+        &::before {
+            top: -0.8rem;
+        }
+
+        &::after {
+            top: 0.8rem;
+        }
+    }
+
+    &__button:hover &__icon  {
+        &,
+        &::after,
+        &::before {
+            background-color: $color-secondary-dark;
+        }
+        
+    }
+
+    &__button:hover &__icon::before {
+        top: -1.1rem;
+    }
+
+    &__button:hover &__icon::after {
+        top: 1.1rem;
+    }
+
+    &__checkbox:checked + &__button &__icon {
+        background-color: transparent;
+    }
+
+    &__checkbox:checked + &__button &__icon::before {
+        top: 0;
+        transform: rotate(135deg);
+        background-color: $color-secondary-dark;
+    }
+
+    &__checkbox:checked + &__button &__icon::after {
+        top: 0;
+        transform: rotate(-135deg);
+        background-color: $color-secondary-dark;
+    }
+}

@@ -1,159 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/f3fa623060.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Welcome | Manuel H. Canas</title>
-</head>
-<body>
-    <div class="header-container">
-        <header id="home">
-            <h1>Manuel H. Canas</h1>
-        </header>
-        <i class="far fa-bars"></i>
-    </div>
-    <nav>
-        <a href="#about" class="hide">About</a>
-        <a href="#portfolio" class="hide">Portfolio</a>
-        <a href="#contact" class="hide">Contact</a>
-        <a href="#cv" class="hide">CV</a>
-    </nav>
-
-    <section class="about-me" id="about">
-        <h2>About Me</h2>
-        <p>My name is Manny and I am a full stack web developer with a passion for design, problem solving, and team work.</p>
-        <h3>Skills</h3>
-        <div class="skills-logos">
-            <marquee scrollamount="12">
-                <img alt="python logo" src="https://languages.abranhe.com/languages/python.png" class="programming-logo"/>
-                <img alt="HTML logo" src="https://languages.abranhe.com/languages/html.png" class="programming-logo"/>
-                <img alt="CSS3 logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png" class="programming-logo"/> 
-                <img alt="Javascript Logo" src="https://languages.abranhe.com/languages/javascript.png" class="programming-logo" />
-                <img alt="C++ Logo" src="https://languages.abranhe.com/languages/cpp.png" class="programming-logo" />
-                <img alt="react JS logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" class="programming-logo" /> 
-                <img alt="Python FLask logo" src="https://spng.pngfind.com/pngs/s/62-626352_png-format-flask-python-logo-transparent-png.png" class="programming-logo" /> 
-                <img alt="Node JS" src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" class="programming-logo"/> 
-                <img alt="Bootstrap" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png" class="programming-logo"/> 
-                <img alt="MongoDB" src="https://res.cloudinary.com/hevo/image/upload/f_auto,q_auto/v1626694700/hevo-blog/MongoDB-sm-logo-500x400-1-1.gif?_i=AA" class="programming-logo" /> 
-                <img alt="Pandas Python" src="https://raw.githubusercontent.com/earthinversion/earthinversion-images/main/images/pandas-python.png" class="programming-logo"/> 
-                <img alt="Matplotlib Python" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Created_with_Matplotlib-logo.svg/1200px-Created_with_Matplotlib-logo.svg.png" class="programming-logo"/> 
-            </marquee>
-        </div>
-        <h3>Degrees & Certificates</h3>
-
-        <div class="edu-logos">
-            <marquee scrollamount="10" direction="right">
-                <div class="bloomtech">
-                    <div class="edu">
-                        <h4>BloomTech</h4>
-                        <p>Full Stack Developer</p>
-                        <p>Spring 2023 (Expected)</p>
-                    </div>
-                </div>
-
-                <div class="nmsu">
-                    <div class="edu">
-                        <h4>New Mexico <br /> State University</h4>
-                        <p>M.Sc., Astronomy</p>
-                        <p>Spring 2023 (Expected)</p>
-                    </div>
-                </div>
-
-                <div class="udemy">
-                    <div class="edu">
-                        <h4>Udemy</h4>
-                        <p>Python Developer</p>
-                        <p>May 2022</p>
-                    </div>
-                </div>
-
-                <div class="udemy">
-                    <div class="edu">
-                        <h4>Udemy</h4>
-                        <p>Full Stack Developer</p>
-                        <p>May 2022</p>
-                    </div>
-                </div>
-
-                <div class="cofc">
-                    <div class="edu">
-                        <h4>College of Charleston</h4>
-                        <p>B.Sc., Astrophysics</p>
-                        <p>May 2018</p>
-                    </div>
-                </div>
-
-                <div class="cofc">
-                    <div class="edu">
-                        <h4>College of Charleston</h4>
-                        <p>B.Sc., Physics</p>
-                        <p>May 2018</p>
-                    </div>
-                </div>
-            </marquee>
-        </div>
-    </section>
-
-    <section id="portfolio">
-        <h2>My Portfolio</h2>
-        <div class="portfolio-items">
-
-            <div class="portfolio-item mundolm">
-                <h3>Mundo Latino <br/>Multiservicios</h3>
-                <a href="https://mundolm.com" target="_blank"><button>Visit Page</button></a>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/f3fa623060.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>Welcome | Manuel H. Canas</title>
+    </head>
+    <body>
+        <nav class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+            <div class="navigation__background">&nbsp;</div>
+            <div class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#landing-page" class="navigation__link">Home</a></li>
+                    <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
+                    <li class="navigation__item"><a href="#portfolio" class="navigation__link">Portfolio</a></li>
+                    <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
+                    <li class="navigation__item"><a href="#cv" class="navigation__link">CV</a></li>
+                </ul>
             </div>
+        </nav>
 
-            <div class="portfolio-item three-brothers">
-                <h3>3 Brother's <br/>Painting LLC</h3>
-                <a href="https://l3brotherspainting.com" target="_blank"><button>Visit Page</button></a>
+        <section id="landing-page" class="landing-page">
+            <header class="landing-page__header">
+                <h1 class="landing-page__heading"><span>Manuel </span>H. Canas</h1>
+                <p class="landing-page__text">Freelancer | <span>Full-Stack Developer</span></p>
+            </header>
+            <i class="fa-light fa-chevron-down landing-page__icon"></i>
+        </section>
+    <main>
+        <section class="about" id="about">
+            <h2 class="heading-secondary u-margin-bottom-m">About Me</h2>
+            <div class="profile-box u-margin-bottom-l">
+                <figure class="profile-box__fig">
+                    <img src="./assets/images/profile-pic.png" alt="manuels profile image" class="profile-box__img">
+                    <figcaption class="profile-box__caption">Full Stack Developer</figcaption>
+                </figure>
+                <div class="profile-box__text">
+                    <h3 class="profile-box__heading">Astrophysicist turned <span>developer</span></h3>
+                    <p class="profile-box__paragraph">My name is Manny and I am a full stack developer with a background in astrophysics. I have a passion for designing and building websites that are beautiful, scalable, accessible, and responsive.</p>
+                </div>
             </div>
-
-            <div class="portfolio-item networthdle">
-                <h3>NetWorthdle</h3>
-                <a href="https://networthdle.herokuapp.com" target="_blank"><button>Visit Page</button></a>
+        </section>
+        <section class="skills">
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card__side card__side--front card__side--front-1">
+                        <h4 class="card__heading">Web <br/> Development</h4>
+                    </div>
+                    <div class="card__side card__side--back">
+                        <ul class="card__side--list">
+                            <li>Beautifully responsive and scalable websites</li>
+                            <li>Latest in frameworks and library technology</li>
+                            <li>Manage data such as users or products</li>
+                        </ul>
+                        <a href="#contact" class="card__side--button card__side--button-1">Get in touch</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__side card__side--front card__side--front-2">
+                        <h4 class="card__heading">Web <br/>  Scraping</h4>
+                    </div>
+                    <div class="card__side card__side--back">
+                        <ul class="card__side--list">
+                            <li>Scrape the web or perform automated tasks</li>
+                            <li>Display data from web to user interface</li>
+                            <li>Store and manage data using databases</li>
+                        </ul>
+                        <a href="#contact" class="card__side--button card__side--button-2">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__side card__side--front card__side--front-3">
+                        <h4 class="card__heading">Data analysis <br/> and <br/> visualization</h4>
+                    </div>
+                    <div class="card__side card__side--back">
+                        <ul class="card__side--list">
+                            <li>Build the right data-structures for the job</li>
+                            <li>Algorithms that produce maximum efficiency</li>
+                            <li>Visualize data through beautiful graphics</li>
+                        </ul>
+                        <a href="#contact" class="card__side--button card__side--button-3">Contact Me</a>
+                    </div>
+                </div>
             </div>
+            <div class="tech-spec">
+                <h2 class="heading-secondary heading-secondary--light u-margin-bottom-m">Tech Spec</h2>
+                <div class="tech-spec__container">
+                    <div class="tech-spec__container--wrapper">
+                        <h3 class="tech-spec__heading">Front-End</h3>
+                        <ul class="tech-spec__list">
+                            <li class="tech-spec__list-item">HTML5</li>
+                            <li class="tech-spec__list-item">CSS3</li>
+                            <li class="tech-spec__list-item">SASS/SCSS</li>
+                            <li class="tech-spec__list-item">JavaScript</li>
+                            <li class="tech-spec__list-item">React.js</li>
+                            <li class="tech-spec__list-item">Bootstrap</li>
+                        </ul>
+                    </div>
 
-            <div class="portfolio-item uscucei">
-                <h3>USCUCEI <br />Web Scraper</h3>
-                <a href="https://github.com/canasmh/USCUCEI" target="_blank"><button>Visit Page</button></a>
+                    <div class="tech-spec__container--wrapper">
+                        <h3 class="tech-spec__heading">Back-End</h3>
+                        <ul class="tech-spec__list">
+                            <li class="tech-spec__list-item">PHP</li>
+                            <li class="tech-spec__list-item">Node.js</li>
+                            <li class="tech-spec__list-item">Django.py</li>
+                            <li class="tech-spec__list-item">Flask.py</li>
+                            <li class="tech-spec__list-item">MongoDB</li>
+                            <li class="tech-spec__list-item">RESTful API</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-spec__container--wrapper">
+                        <h3 class="tech-spec__heading">Other</h3>
+                        <ul class="tech-spec__list">
+                            <li class="tech-spec__list-item">Wordpress</li>
+                            <li class="tech-spec__list-item">Selenium</li>
+                            <li class="tech-spec__list-item">Plotly</li>
+                            <li class="tech-spec__list-item">Seaborn</li>
+                            <li class="tech-spec__list-item">Pandas</li>
+                        </ul>
+                    </div>
+                </div>
+                <a class="btn-outline">Get in touch</a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact">
-        <h2>Get In Touch</h2>
-        <p>Contact me through any of the platforms below!</p>
-        <div class="soc-icons">
-            <a href="https://facebook.com/manuel.canas.1029" target="_blank"><i class="fa-brands fa-facebook soc-icon"></i></a>
-            <a href="https://twitter.com/astromanny" target="_blank"><i class="fa-brands fa-twitter soc-icon"></i></a>
-            <a href="https://instagram.com/too_manny_stars" target="_blank"><i class="fa-brands fa-instagram soc-icon"></i></a>
-            <a href="https://linkedin.com/in/canasmh" target="_blank"><i class="fa-brands fa-linkedin soc-icon"></i></a>
-            <a href="https://www.tiktok.com/@manuelcanas2"><i class="fa-brands fa-tiktok soc-icon"></i></a>
-            <a href="https://github.com/canasmh" target="_blank"><i class="fa-brands fa-github soc-icon"></i></a>
-            <a href="https://www.buymeacoffee.com/canasmhw"><i class="fa-solid fa-mug-hot soc-icon"></i></a>
-            <a href="mailto:canasmh@yahoo.com" target="_blank"><i class="fa-solid fa-envelope soc-icon"></i></a>
-        </div>
-    </section>
-
-    <section id="cv">
-        <h2>Curriculum Vitae</h2>
-        <div class="cv-buttons">
-            <a href="./cv.html"><button>View in HTML</button></a>
-            <a href="./cv.pdf" download="canas-cv"><button>Download PDF</button></a>
-        </div>
-        <a href="#home"><button>Back to Top</button></a>
-    </section>
-
+        <section class="portfolio" id="portfolio">
+            <h2 class="heading-secondary u-margin-bottom-m">Portfolio</h2>
+            <div class="portfolio__container">
+                <div class="cover-card">
+                    <div class="cover-card__cover cover-card__cover--5">
+                        <h3 class="cover-card__heading">Foothills Property Group</h3>
+                    </div>
+                    <div class="cover-card__content">
+                        <div class="cover-card__content--container">
+                            <h3 class="cover-card__content--heading">Client</h3>
+                            <p class="cover-card__content--text">Foothills Property Group</p>
+                            <h3 class="cover-card__content--heading">Tech</h3>
+                            <p class="cover-card__content--text">HTML, SCSS/SASS, JavaScript, PHP, WordPress, IDX</p>
+                            <h3 class="cover-card__content--heading">Description</h3>
+                            <p class="cover-card__content--text">Built a custom wordpress theme for a local real estate brokerage company</p>
+                        </div>
+                        <div class="cover-card__icon-container">
+                            <a href="https://github.com/canasmh/FoothillsPG" target="_blank" class="cover-card__link"><i class="fa-brands fa-github cover-card__icon"></i></a>
+                            <a href="https://foothillspg.com" target="_blank" class="cover-card__link"><i class="fa-regular fa-window cover-card__icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cover-card">
+                    <div class="cover-card__cover cover-card__cover--1">
+                        <h3 class="cover-card__heading">NetWorthdle</h3>
+                    </div>
+                    <div class="cover-card__content">
+                        <div class="cover-card__content--container">
+                            <h3 class="cover-card__content--heading">Client</h3>
+                            <p class="cover-card__content--text">Original Project | Myself</p>
+                            <h3 class="cover-card__content--heading">Tech</h3>
+                            <p class="cover-card__content--text">SeleniumPy, MongoAtlas, ReactJS, Bootstrap</p>
+                            <h3 class="cover-card__content--heading">Description</h3>
+                            <p class="cover-card__content--text">Puzzle game where users have four tries to correctly guess the networth of a given celebrity</p>
+                        </div>
+                        <div class="cover-card__icon-container">
+                            <a href="https://github.com/canasmh/NetWorthdle" target="_blank" class="cover-card__link"><i class="fa-brands fa-github cover-card__icon"></i></a>
+                            <a href="https://networthdle.herokuapp.com" target="_blank" class="cover-card__link"><i class="fa-regular fa-window cover-card__icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cover-card">
+                    <div class="cover-card__cover cover-card__cover--2">
+                        <h3 class="cover-card__heading">Mundo Latino Multiservicios</h3>
+                    </div>
+                    <div class="cover-card__content">
+                        <div class="cover-card__content--container">
+                            <h3 class="cover-card__content--heading">Client</h3>
+                            <p class="cover-card__content--text">Mundo Latino Multiservicios</p>
+                            <h3 class="cover-card__content--heading">Tech</h3>
+                            <p class="cover-card__content--text">HTML5, CSS3, Bootstrap, JS, NodeJS</p>
+                            <h3 class="cover-card__content--heading">Description</h3>
+                            <p class="cover-card__content--text">Built the website for Mundo Latino Multiservicios, a local, hispanic-owned multi-services company</p>
+                        </div>
+                        <div class="cover-card__icon-container">
+                            <a href="https://github.com/canasmh/mundolm" target="_blank" class="cover-card__link"><i class="fa-brands fa-github cover-card__icon"></i></a>
+                            <a href="https://mundolm.com" target="_blank" class="cover-card__link"><i class="fa-regular fa-window cover-card__icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cover-card">
+                    <div class="cover-card__cover cover-card__cover--3">
+                        <h3 class="cover-card__heading">3 Brother's Painting</h3>
+                    </div>
+                    <div class="cover-card__content">
+                        <div class="cover-card__content--container">
+                            <h3 class="cover-card__content--heading">Client</h3>
+                            <p class="cover-card__content--text">3 Brother's Painting, LLC</p>
+                            <h3 class="cover-card__content--heading">Tech</h3>
+                            <p class="cover-card__content--text">WordPress, CSS3</p>
+                            <h3 class="cover-card__content--heading">Description</h3>
+                            <p class="cover-card__content--text">Built website for 3 Brother's Painting, a local, hispanic-owned painting company</p>
+                        </div>
+                        <div class="cover-card__icon-container">
+                            <a href="https://l3brotherspainting.com" target="_blank" class="cover-card__link"><i class="fa-regular fa-window cover-card__icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cover-card">
+                    <div class="cover-card__cover cover-card__cover--4">
+                        <h3 class="cover-card__heading">USCUCEI</h3>
+                    </div>
+                    <div class="cover-card__content">
+                        <div class="cover-card__content--container">
+                            <h3 class="cover-card__content--heading">Client</h3>
+                            <p class="cover-card__content--text">USC Upstate | Center for Entrepreneurship and Innovation</p>
+                            <h3 class="cover-card__content--heading">Tech</h3>
+                            <p class="cover-card__content--text">Python, SeleniumPy, MongoDB, WordPress</p>
+                            <h3 class="cover-card__content--heading">Description</h3>
+                            <p class="cover-card__content--text">Build webscraper that gathers local events and publishes them to USCUCEI's website</p>
+                        </div>
+                        <div class="cover-card__icon-container">
+                        
+                            <a href="https://github.com/canasmh/USCUCEI" target="_blank" class="cover-card__link"><i class="fa-brands fa-github cover-card__icon"></i></a>
+                            <a href="https://uscupstatecei.org/events" target="_blank" class="cover-card__link"><i class="fa-regular fa-window cover-card__icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h2 class="heading-secondary u-margin-bottom-m">Get In Touch</h2>
+            <p class="contact__text u-margin-bottom-l">Feel free to contact me or support me through any of the platforms below</p>
+            <div class="contact__icons-container">
+                <a href="https://facebook.com/manuel.canas.1029" class="contact__link" target="_blank"><i class="fa-brands fa-facebook contact__icon"></i></a>
+                <a href="https://twitter.com/astromanny" class="contact__link" target="_blank"><i class="fa-brands fa-twitter contact__icon"></i></a>
+                <a href="https://instagram.com/too_manny_stars" class="contact__link" target="_blank"><i class="fa-brands fa-instagram contact__icon"></i></a>
+                <a href="https://linkedin.com/in/canasmh" class="contact__link" target="_blank"><i class="fa-brands fa-linkedin contact__icon"></i></a>
+                <a href="https://www.tiktok.com/@manuelcanas2" class="contact__link" target="_blank"><i class="fa-brands fa-tiktok contact__icon"></i></a>
+                <a href="https://github.com/canasmh" class="contact__link" target="_blank"><i class="fa-brands fa-github contact__icon"></i></a>
+                <a href="https://www.buymeacoffee.com/canasmhw" class="contact__link" target="_blank"><i class="fa-solid fa-mug-hot contact__icon"></i></a>
+                <a href="mailto:canasmh@yahoo.com" class="contact__link" target="_blank"><i class="fa-solid fa-envelope contact__icon"></i></a>
+            </div>
+        </section>
+        <section class="cv" id="cv">
+            <h2 class="heading-secondary u-margin-bottom-m">Curriculum Vitae</h2>
+            <div class="cv__buttons">
+                <a class="cv__button" href="./cv.html">View in HTML</a>
+                <a class="cv__button" href="./cv.pdf" download="canas-cv">Download PDF</a>
+            </div>
+            <a class="btn-outline" href="#landing-page">Back to Top</a>
+        </section>
+    </main>
     <footer>
-        <p></p>
+        <p>Manuel H. Canas &copy; | All Rights Reserved</p>
     </footer>
-    
+
     <script src="assets/js/index.js" type="text/javascript"></script>
 </body>
 </html>

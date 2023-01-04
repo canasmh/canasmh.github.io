@@ -1,0 +1,33 @@
+body {
+    font-family: $default-font-family;
+    font-weight: 400;
+    font-size: $default-font-size;
+    line-height: 1.7;
+    background-color: $color-light-gray;
+    color: $color-primary;
+    letter-spacing: 2px;
+}
+
+.heading-secondary {
+    text-align: center;
+    font-size: 3.6rem;
+    font-weight: 400;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    text-indent: 15px;
+
+    &--light {
+        color: $color-light-gray;
+    }
+
+    &:hover {
+        letter-spacing: 20px;
+    }
+
+    @include respond(phone) {
+        font-size: 3.4rem;
+        letter-spacing: 5px;
+        text-indent: 5px;
+    }
+}
