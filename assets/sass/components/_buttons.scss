@@ -7,12 +7,15 @@
     &,
     &:link,
     &:visited {
+        text-align: center;
         padding: 2rem 5rem;
         letter-spacing: 5px;
         border-radius: 50px;
         color: $color-light-gray;
+        width: 25%;
         border: 1px solid $color-light-gray;
         text-transform: uppercase;
+        text-decoration: none;
         margin: 0 auto;
         cursor: pointer;
         transition: all 0.4s;
