@@ -296,4 +296,10 @@ footer {
     letter-spacing: 8px;
     font-weight: 300;
     font-size: 1.4rem;
+    text-indent: 8px;
+
+    @include respond(tab-port) {
+        letter-spacing: 4px;
+        text-indent: 4px;
+    }
 }
