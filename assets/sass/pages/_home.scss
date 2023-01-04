@@ -81,10 +81,18 @@
         flex-wrap: wrap;
         margin-bottom: 8rem;
 
+        @include respond(tab-land) {
+            justify-content: space-between;
+        }
+
         &--wrapper {
-            flex: 0 0 35rem;
+            flex: 0 0 32rem;
             padding: 3rem 0;
             text-align: center;
+
+            @include respond(tab-land) {
+                flex: 0 0 30rem;
+            }
         }
     }
 
@@ -95,6 +103,12 @@
         letter-spacing: 8px;
         font-weight: 400;
         margin-bottom: 3rem;
+        text-indent: 8px;
+
+        @include respond(tab-land) {
+            letter-spacing: 5px;
+            text-indent: 5px;
+        }
     }
 
     &__list {
@@ -107,7 +121,11 @@
 }
 
 .portfolio {
-    padding: 8rem 10rem 15rem;
+    padding: 8rem 10rem 0;
+
+    @include respond(tab-land) {
+        padding: 8rem 10rem 0;
+    }
 
     &__container {
         display: flex;
