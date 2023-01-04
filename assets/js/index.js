@@ -21,19 +21,7 @@ function removeHideClass() {
     })
 }
 
-function addHideClass() {
-        
-    Array.from(navLinks).forEach(item => {
-        
-        item.classList.add("hide");
-    })
-}
 
-if (screenWidth >= 900) {
-    console.log("Screen is wider than 900px")
-} else {
-    console.log("Screen is smaller than 900px")
-}
 
 window.onresize = window.onload = function() {
     screenWidth = screen.width;
@@ -44,7 +32,9 @@ window.onresize = window.onload = function() {
         navButton.addEventListener('click', toggleNavLinks)
     }
 }
+//Update Footer date
+const year = new Date().getFullYear();
 
 let footer = document.querySelector('footer p');
 
-footer.textContent = `© ${year} | Manuel H. Canas`
+footer.textContent = `Manuel H. Canas © ${year} | All Rights Reserved`
