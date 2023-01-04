@@ -5,13 +5,13 @@
     padding: 3rem;
     padding-left: 6rem;
     font-size: $default-font-size;
-    // border: 1px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     @include respond(tab-land) {
         width: 85%;
+        padding: 0 3rem;
         flex-direction: column;
         text-align: center;
     }
@@ -30,7 +30,7 @@
             width: 17.5rem;
             flex: 0 0 17.5rem;
             margin-right: 0;
-            margin-bottom: 3rem;
+            margin-bottom: 4rem;
         }
     }
 
@@ -42,11 +42,6 @@
         position: absolute;
         top: 2rem;
         left: 0;
-
-        // @include respond(tab-land) {
-        //     left: -10rem;
-        // }
-
     }
 
     &__caption {
