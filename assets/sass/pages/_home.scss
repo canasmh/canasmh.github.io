@@ -8,12 +8,15 @@
     align-items: center;
     text-align: center;
     position: relative;
-    
 
     &__header {
         line-height: 3;
         text-transform: uppercase;
         margin-top: -20rem;
+
+        @include respond(phone) {
+            line-height: 1.5;
+        }
     }
 
     &__heading {
@@ -21,6 +24,21 @@
         font-size: 5.6rem;
         letter-spacing: 25px;
         animation: slideInLeft 1.5s ease-out;
+        text-indent: 25px;
+
+        @include respond(tab-port) {
+            letter-spacing: 8px;
+            text-indent: 8px;
+        }
+
+        @include respond(phone) {
+            font-size: 4rem;
+            letter-spacing: 2px;
+            text-indent: 2px;
+            margin-bottom: 8rem;
+        }
+
+
 
         span {
             color: $color-secondary;
@@ -32,6 +50,18 @@
         font-size: 2.4rem;
         letter-spacing: 10px;
         animation: slideInRight 1.5s ease-out;
+        text-indent: 10px;
+
+        @include respond(tab-port) {
+            letter-spacing: 3px;
+            text-indent: 3px;
+        }
+
+        @include respond(phone) {
+            letter-spacing: 1px;
+            text-indent: 1px;
+            font-size: 2rem;
+        }
 
         span {
             color: $color-secondary;
@@ -61,13 +91,28 @@
 
 .about {
     padding: 8rem 10rem 25rem;
+
+    @include respond(tab-port) {
+        padding: 8rem 5rem 25rem;
+    }
+
+    @include respond(phone) {
+        padding: 8rem 2rem 25rem;
+    }
 }
 
 .skills {
     background-image: $dark-bg;
     padding: 0 10rem 15rem;
-}
 
+    @include respond(tab-land) {
+        padding: 0 5rem 15rem;
+    }
+
+    @include respond(phone) {
+        padding: 0rem 2rem 15rem;
+    }
+}
 
 .tech-spec {
 
@@ -77,10 +122,26 @@
         flex-wrap: wrap;
         margin-bottom: 8rem;
 
+        @include respond(tab-land) {
+            justify-content: space-between;
+        }
+
+        @include respond(tab-port) {
+            justify-content: center;
+        }
+
         &--wrapper {
-            flex: 0 0 35rem;
+            flex: 0 0 32rem;
             padding: 3rem 0;
             text-align: center;
+
+            @include respond(tab-land) {
+                flex: 0 0 30rem;
+            }
+
+            @include respond(tab-port) {
+                flex: 0 0 100%;
+            }
         }
     }
 
@@ -91,6 +152,12 @@
         letter-spacing: 8px;
         font-weight: 400;
         margin-bottom: 3rem;
+        text-indent: 8px;
+
+        @include respond(tab-land) {
+            letter-spacing: 5px;
+            text-indent: 5px;
+        }
     }
 
     &__list {
@@ -103,17 +170,38 @@
 }
 
 .portfolio {
-    padding: 8rem 10rem 15rem;
+    padding: 8rem 10rem 0;
+
+    @include respond(tab-land) {
+        padding: 8rem 10rem 0;
+    }
+
+    @include respond(phone) {
+        padding: 8rem 2rem 0;
+    }
 
     &__container {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+
+        @include respond(tab-port) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }
 
 .contact {
-    padding: 8rem 10rem 15rem;
+    padding: 8rem 10rem 10rem;
+
+    @include respond(tab-land) {
+        padding: 8rem 5rem;
+    }
+
+    @include respond(phone) {
+        padding: 8rem 2rem;
+    }
 
     &__text {
         font-size: 2rem;
@@ -126,14 +214,19 @@
         justify-content: center;
         width: 80%;
         margin: 0 auto;
+
+        @include respond(tab-land) {
+            width: 90%;
+        }
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
     }
 
     &__link {
-        margin-bottom: 8rem;
+        margin: 0 4rem 8rem;
 
-        &:not(:last-child) {
-            margin-right: 8rem;
-        }
         &,
         &:visited,
         &:link {
@@ -154,6 +247,10 @@
 
     &__icon {
         font-size: 10rem;
+
+        @include respond(tab-port) {
+            font-size: 8rem;
+        }
     }
 }
 
@@ -162,10 +259,16 @@
     background-image: $dark-bg;
     color: $color-light-gray;
 
+    @include respond(tab-port) {
+        padding: 10rem;
+    }
+
+    @include respond(phone) {
+        padding: 10rem 2rem;
+    }
+
     &__buttons {
         text-align: center;
-
-
     }
 
     &__button {
@@ -188,6 +291,27 @@
 
             &:not(:last-child) {
                 margin-right: 4rem;
+
+                @include respond(tab-port) {
+                    margin: 0 auto 4rem;
+                }
+            }
+
+
+            @include respond(tab-land) {
+                width: 35%;
+            }
+
+            @include respond(tab-port) {
+                width: 40%;
+                min-width: 30rem;
+                display: block;
+                margin: 0 auto 4rem;
+            }
+
+            @include respond(phone) {
+                width: 90%;
+                max-width: 35rem;
             }
         }
 
@@ -215,4 +339,16 @@ footer {
     letter-spacing: 8px;
     font-weight: 300;
     font-size: 1.4rem;
+    text-indent: 8px;
+
+    @include respond(tab-port) {
+        letter-spacing: 4px;
+        text-indent: 4px;
+    }
+
+    @include respond(phone) {
+        letter-spacing: 1px;
+        text-indent: 1px;
+        font-size: 1.2rem;
+    }
 }

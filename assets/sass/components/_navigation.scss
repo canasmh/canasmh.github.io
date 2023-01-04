@@ -22,6 +22,11 @@
         align-items: center;
         animation: fadeIn 1.5s ease-out 1.8s, slideUp 1.5s ease-out 1.8s;
         animation-fill-mode: backwards;
+
+        @include respond(tab-port) {
+            top: 2.5rem;
+            right: 2.5rem;
+        }
     }
 
     &__background {
@@ -36,13 +41,18 @@
         transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
         animation: fadeIn 1.5s ease-out 1.8s, slideUp 1.5s ease-out 1.8s;
         animation-fill-mode: backwards;
+
+        @include respond(tab-port) {
+            top: 3rem;
+            right: 3rem;
+        }
     }
 
     &__nav {
         height: 100vh;
         position: fixed;
         top: 0;
-        left: 0;
+        left: -50%;
         z-index: 500;
         opacity: 0;
         width: 0;
@@ -60,6 +70,16 @@
 
     &__item {
         margin: 1.5rem;
+
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+        }
+
+        @include respond(tab-port) {
+            &:not(:last-child) {
+                margin-bottom: 5rem;
+            }
+        }
     }
 
     &__link {
@@ -94,6 +114,7 @@
     }
 
     &__checkbox:checked ~ &__nav {
+        left: 0;
         opacity: 1;
         width: 100vw;
     }
