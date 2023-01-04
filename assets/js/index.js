@@ -1,24 +1,13 @@
-let navButton = document.querySelector('.fa-bars')
-let navLinks = document.querySelectorAll('nav a')
-let screenWidth = screen.width;
+// Navigation
+const navItems = document.querySelectorAll(".navigation__link");
+const navIcon = document.getElementById("navi-toggle");
 
-const year = new Date().getFullYear();
-
-function toggleNavLinks() {
-        
-    Array.from(navLinks).forEach(item => {
-        
-        item.classList.toggle("hide");
-        item.addEventListener('click', toggleNavLinks);
-    })
+const handleIconClick = () => {
+    navIcon.checked = false;
 }
 
-function removeHideClass() {
-        
-    Array.from(navLinks).forEach(item => {
-        
-        item.classList.remove("hide");
-    })
+for (let i=0; i < navItems.length; i++) {
+    navItems[i].addEventListener('click', handleIconClick)
 }
 
 

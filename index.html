@@ -13,13 +13,20 @@
     </head>
     <body>
         <nav class="navigation">
-            <ul class="navigation__list">
-                <li class="navigation__list-item"><a href="#landing-page" class="navigation__list-link">Home</a></li>
-                <li class="navigation__list-item"><a href="#about" class="navigation__list-link">About</a></li>
-                <li class="navigation__list-item"><a href="#portfolio" class="navigation__list-link">Portfolio</a></li>
-                <li class="navigation__list-item"><a href="#contact" class="navigation__list-link">Contact</a></li>
-                <li class="navigation__list-item"><a href="#cv" class="navigation__list-link">CV</a></li>
-            </ul>
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+            <div class="navigation__background">&nbsp;</div>
+            <div class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#landing-page" class="navigation__link">Home</a></li>
+                    <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
+                    <li class="navigation__item"><a href="#portfolio" class="navigation__link">Portfolio</a></li>
+                    <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
+                    <li class="navigation__item"><a href="#cv" class="navigation__link">CV</a></li>
+                </ul>
+            </div>
         </nav>
 
         <section id="landing-page" class="landing-page">
