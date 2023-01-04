@@ -76,6 +76,10 @@
     @include respond(tab-port) {
         padding: 8rem 5rem 25rem;
     }
+
+    @include respond(phone) {
+        padding: 8rem 2rem 25rem;
+    }
 }
 
 .skills {
@@ -84,6 +88,10 @@
 
     @include respond(tab-land) {
         padding: 0 5rem 15rem;
+    }
+
+    @include respond(phone) {
+        padding: 0rem 2rem 15rem;
     }
 }
 
@@ -149,6 +157,10 @@
         padding: 8rem 10rem 0;
     }
 
+    @include respond(phone) {
+        padding: 8rem 2rem 0;
+    }
+
     &__container {
         display: flex;
         justify-content: center;
@@ -166,6 +178,10 @@
 
     @include respond(tab-land) {
         padding: 8rem 5rem;
+    }
+
+    @include respond(phone) {
+        padding: 8rem 2rem;
     }
 
     &__text {
@@ -226,6 +242,10 @@
 
     @include respond(tab-port) {
         padding: 10rem;
+    }
+
+    @include respond(phone) {
+        padding: 10rem 2rem;
     }
 
     &__buttons {
