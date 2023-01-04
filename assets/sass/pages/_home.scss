@@ -135,7 +135,11 @@
 }
 
 .contact {
-    padding: 8rem 10rem 15rem;
+    padding: 8rem 10rem 10rem;
+
+    @include respond(tab-land) {
+        padding: 8rem 5rem;
+    }
 
     &__text {
         font-size: 2rem;
@@ -148,14 +152,15 @@
         justify-content: center;
         width: 80%;
         margin: 0 auto;
+
+        @include respond(tab-land) {
+            width: 90%;
+        }
     }
 
     &__link {
         margin-bottom: 8rem;
-
-        &:not(:last-child) {
-            margin-right: 8rem;
-        }
+        margin-right: 8rem;
         &,
         &:visited,
         &:link {
