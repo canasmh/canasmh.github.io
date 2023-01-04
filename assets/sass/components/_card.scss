@@ -2,6 +2,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    transform: translateY(-50%);
+
+    @include respond(tab-land) {
+        transform: translateY(-10%);
+    }
 }
 
 .card {
@@ -11,12 +16,28 @@
     position: relative;
     height: 48rem;
     border-radius: 20px;
-    padding: 0 10rem;
-    transform: translateY(-50%);
-    margin-bottom: 5rem;
+    padding: 0;
+
+    @include respond(tab-land) {
+        height: 64rem;
+        flex: 0 1 64rem;
+        perspective: 0;
+        -moz-perspective: 0;
+        border: none;
+        overflow: hidden;
+        border: 1px solid #FFF;
+
+        &:not(:last-child) {
+            margin-bottom: 10rem;
+        }
+    }
     
     &:not(:last-child) {
         margin-right: 5rem;
+
+        @include respond(tab-land) {
+            margin-right: 0;
+        }
     }
 
     &__heading {
@@ -25,6 +46,10 @@
         font-weight: 200;
         text-transform: uppercase;
         letter-spacing: 2px;
+
+        @include respond(tab-land) {
+            font-size: 2.8rem;
+        }
     }
 
     &__side {
@@ -43,6 +68,13 @@
         align-items: center;
         transition: all 0.8s ease;
         border: 1px solid $color-light-gray;
+        
+        @include respond(tab-land) {
+            flex-flow: column nowrap;
+            justify-content: space-between;
+            border-radius: 20px;
+            border: none;
+        }
 
         &--front {
             color: #FFF;
@@ -57,12 +89,28 @@
             &-3 {
                 background-image: linear-gradient(to bottom right, $color-tertiary-light, $color-tertiary-dark);
             }
+
+            @include respond(tab-land) {
+                z-index: 10;
+                height: 30rem;
+                border-radius: 0;
+                clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+                justify-content: center;
+                padding: 3rem 1.5rem;
+            }
         }
 
         &--back {
             transform: rotateY(180deg);
             background-color: #FFF;
             padding: 3rem;
+
+            @include respond(tab-land) {
+                padding: 6rem 1.5rem 4rem;
+                transform: rotateY(0) translateY(60%);
+                height: 40rem;
+                border-radius: 0;
+            }
         }
 
         &--list {
@@ -75,6 +123,10 @@
                 font-size: 1.5rem;
                 line-height: 1.5;
                 font-weight: 300;
+
+                @include respond(tab-land) {
+                    padding: 2.5rem 0;
+                }
 
                 &:not(:last-child) {
                     border-bottom: 1px solid darken($color-light-gray, 20%);
@@ -95,14 +147,37 @@
             border-radius: 100px;
             transition: all 0.3s;
 
+            &,
+            &:link,
+            &:visited {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            @include respond(tab-land) {
+                padding: 1.2rem 0;
+                width: 40%;
+                text-align: center;
+            }
+
             &:hover {
                 transform: translateY(-0.6rem) scale(1.02);
                 box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+
+                @include respond(tab-land) {
+                    transform: none;
+                    box-shadow: none;
+                }
             }
 
             &:active {
                 transform: translateY(-0.4rem) scale(1.01);
                 box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
+
+                @include respond(tab-land) {
+                    transform: none;
+                    box-shadow: none;
+                }
             }
 
             &-1 {
@@ -118,6 +193,12 @@
                     background-color: $color-secondary-dark;
                     color: #FEFEFE;
                     border: 2px solid $color-secondary-dark;
+
+                    @include respond(tab-land) {
+                        background-color: #FFF;
+                        color: $color-secondary;
+                        border: 2px solid $color-secondary;
+                    }
                 }
             }
 
@@ -134,6 +215,12 @@
                     background-color: $color-primary-dark;
                     color: #FEFEFE;
                     border: 2px solid $color-primary-dark;
+
+                    @include respond(tab-land) {
+                        background-color: #FFF;
+                        color: $color-primary;
+                        border: 2px solid $color-primary;
+                    }
                 }
             }
 
@@ -150,6 +237,12 @@
                     background-color: $color-tertiary-dark;
                     color: #FEFEFE;
                     border: 2px solid $color-tertiary-dark;
+
+                    @include respond(tab-land) {
+                        background-color: #FFF;
+                        color: $color-tertiary;
+                        border: 2px solid $color-tertiary;
+                    }
                 }
             }
             
@@ -158,9 +251,17 @@
 
     &:hover &__side--front {
         transform: rotateY(-180deg);
+
+        @include respond(tab-land) {
+            transform: rotateY(0);
+        }
     }
 
     &:hover &__side--back {
         transform: rotateY(0deg);
+
+        @include respond(tab-land) {
+            transform: translateY(15rem);
+        }
     }
 }
