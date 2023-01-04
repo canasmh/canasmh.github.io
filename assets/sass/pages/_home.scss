@@ -224,6 +224,10 @@
     background-image: $dark-bg;
     color: $color-light-gray;
 
+    @include respond(tab-port) {
+        padding: 10rem;
+    }
+
     &__buttons {
         text-align: center;
     }
