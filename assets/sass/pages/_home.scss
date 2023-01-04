@@ -13,6 +13,10 @@
         line-height: 3;
         text-transform: uppercase;
         margin-top: -20rem;
+
+        @include respond(phone) {
+            line-height: 1.5;
+        }
     }
 
     &__heading {
@@ -26,6 +30,15 @@
             letter-spacing: 8px;
             text-indent: 8px;
         }
+
+        @include respond(phone) {
+            font-size: 4rem;
+            letter-spacing: 2px;
+            text-indent: 2px;
+            margin-bottom: 8rem;
+        }
+
+
 
         span {
             color: $color-secondary;
@@ -42,6 +55,12 @@
         @include respond(tab-port) {
             letter-spacing: 3px;
             text-indent: 3px;
+        }
+
+        @include respond(phone) {
+            letter-spacing: 1px;
+            text-indent: 1px;
+            font-size: 2rem;
         }
 
         span {
@@ -325,5 +344,11 @@ footer {
     @include respond(tab-port) {
         letter-spacing: 4px;
         text-indent: 4px;
+    }
+
+    @include respond(phone) {
+        letter-spacing: 1px;
+        text-indent: 1px;
+        font-size: 1.2rem;
     }
 }
