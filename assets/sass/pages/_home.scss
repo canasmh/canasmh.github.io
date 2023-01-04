@@ -99,6 +99,10 @@
             justify-content: space-between;
         }
 
+        @include respond(tab-port) {
+            justify-content: center;
+        }
+
         &--wrapper {
             flex: 0 0 32rem;
             padding: 3rem 0;
@@ -106,6 +110,10 @@
 
             @include respond(tab-land) {
                 flex: 0 0 30rem;
+            }
+
+            @include respond(tab-port) {
+                flex: 0 0 100%;
             }
         }
     }
