@@ -72,6 +72,10 @@
 
 .about {
     padding: 8rem 10rem 25rem;
+
+    @include respond(tab-port) {
+        padding: 8rem 5rem 25rem;
+    }
 }
 
 .skills {
