@@ -191,8 +191,6 @@
 
     &__buttons {
         text-align: center;
-
-
     }
 
     &__button {
@@ -215,6 +213,10 @@
 
             &:not(:last-child) {
                 margin-right: 4rem;
+            }
+
+            @include respond(tab-land) {
+                width: 35%;
             }
         }
 
