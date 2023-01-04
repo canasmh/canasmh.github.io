@@ -42,7 +42,7 @@
         height: 100vh;
         position: fixed;
         top: 0;
-        left: 0;
+        left: -50%;
         z-index: 500;
         opacity: 0;
         width: 0;
@@ -94,6 +94,7 @@
     }
 
     &__checkbox:checked ~ &__nav {
+        left: 0;
         opacity: 1;
         width: 100vw;
     }
