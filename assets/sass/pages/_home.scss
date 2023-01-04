@@ -67,8 +67,11 @@
 .skills {
     background-image: $dark-bg;
     padding: 0 10rem 15rem;
-}
 
+    @include respond(tab-land) {
+        padding: 0 5rem 15rem;
+    }
+}
 
 .tech-spec {
 
