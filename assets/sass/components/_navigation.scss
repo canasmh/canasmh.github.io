@@ -22,6 +22,11 @@
         align-items: center;
         animation: fadeIn 1.5s ease-out 1.8s, slideUp 1.5s ease-out 1.8s;
         animation-fill-mode: backwards;
+
+        @include respond(tab-port) {
+            top: 2.5rem;
+            right: 2.5rem;
+        }
     }
 
     &__background {
@@ -36,6 +41,11 @@
         transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
         animation: fadeIn 1.5s ease-out 1.8s, slideUp 1.5s ease-out 1.8s;
         animation-fill-mode: backwards;
+
+        @include respond(tab-port) {
+            top: 3rem;
+            right: 3rem;
+        }
     }
 
     &__nav {
