@@ -10,17 +10,16 @@ for (let i=0; i < navItems.length; i++) {
     navItems[i].addEventListener('click', handleIconClick)
 }
 
+// Landing Page Icon Scroll
+const downIcon = document.querySelector('.landing-page__icon');
 
+downIcon.addEventListener('click', () => {
+    window.scrollBy({
+        'top': window.screen.height,
+        'behavior': 'smooth'
+    });
+})
 
-window.onresize = window.onload = function() {
-    screenWidth = screen.width;
-    if (screenWidth >= 900) {
-        removeHideClass();
-    } else {
-        addHideClass();
-        navButton.addEventListener('click', toggleNavLinks)
-    }
-}
 //Update Footer date
 const year = new Date().getFullYear();
 
