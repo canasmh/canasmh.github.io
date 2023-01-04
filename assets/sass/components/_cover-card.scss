@@ -17,11 +17,20 @@
         height: 60rem;
     }
 
+    @include respond(tab-port) {
+        flex: 0 0 60rem;
+        width: 45rem;
+    }
+
     &:not(:last-child) {
         margin-right: 5rem;
 
         @include respond(tab-land) {
             margin-right: 2.5rem;
+        }
+
+        @include respond(tab-port) {
+            margin-right: 0;
         }
     }
 
@@ -43,6 +52,11 @@
             clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
             padding: 0 2.5rem;
             height: 35%;
+        }
+
+        @include respond(tab-port) {
+            clip-path: none;
+            height: 30%;
         }
 
         &--1 {
@@ -116,6 +130,10 @@
             transform: translateY(43%);
             height: 70%;
             padding: 3rem 1.5rem;
+        }
+
+        @include respond(tab-port) {
+            padding: 3rem 5rem;
         }
 
         &--heading {
