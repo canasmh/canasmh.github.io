@@ -64,6 +64,12 @@
         &:not(:last-child) {
             margin-bottom: 3rem;
         }
+
+        @include respond(tab-port) {
+            &:not(:last-child) {
+                margin-bottom: 5rem;
+            }
+        }
     }
 
     &__link {
