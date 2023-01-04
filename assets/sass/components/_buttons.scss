@@ -28,6 +28,11 @@
             width: 40%;
             min-width: 30rem;
         }
+
+        @include respond(phone) {
+            width: 90%;
+            max-width: 35rem;
+        }
     }
 
     &:hover {

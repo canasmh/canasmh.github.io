@@ -288,7 +288,11 @@
                 min-width: 30rem;
                 display: block;
                 margin: 0 auto 4rem;
+            }
 
+            @include respond(phone) {
+                width: 90%;
+                max-width: 35rem;
             }
         }
 
