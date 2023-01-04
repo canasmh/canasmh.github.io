@@ -44,6 +44,12 @@
         flex: 0 1 68rem;
         width: 45rem;
     }
+
+    @include respond(phone) {
+        flex: 0 1 68rem;
+        min-width: 30rem;
+        width: 50%;
+    }
     
     &:not(:last-child) {
         margin-right: 5rem;
@@ -135,6 +141,10 @@
                 transform: rotateY(0) translateY(26%);
                 height: 54rem;
             }
+
+            @include respond(phone) {
+                padding: 6rem 3rem 4rem;
+            }
         }
 
         &--list {
@@ -189,9 +199,12 @@
             }
 
             @include respond(tab-port) {
-                padding: 1.2rem 0;
                 width: 60%;
-                text-align: center;
+            }
+
+            @include respond(phone) {
+                width: 100%;
+                max-width: 25rem;
             }
 
             &:hover {
