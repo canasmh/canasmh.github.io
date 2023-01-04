@@ -60,6 +60,10 @@
 
     &__item {
         margin: 1.5rem;
+
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+        }
     }
 
     &__link {
