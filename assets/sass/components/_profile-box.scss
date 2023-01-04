@@ -15,6 +15,10 @@
         flex-direction: column;
         text-align: center;
     }
+
+    @include respond(tab-port) {
+        width: 100%;
+    }
  
     &__fig {
         height: 15rem;

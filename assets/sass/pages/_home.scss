@@ -22,6 +22,11 @@
         animation: slideInLeft 1.5s ease-out;
         text-indent: 25px;
 
+        @include respond(tab-port) {
+            letter-spacing: 8px;
+            text-indent: 8px;
+        }
+
         span {
             color: $color-secondary;
         }
@@ -33,6 +38,11 @@
         letter-spacing: 10px;
         animation: slideInRight 1.5s ease-out;
         text-indent: 10px;
+
+        @include respond(tab-port) {
+            letter-spacing: 3px;
+            text-indent: 3px;
+        }
 
         span {
             color: $color-secondary;
@@ -62,6 +72,10 @@
 
 .about {
     padding: 8rem 10rem 25rem;
+
+    @include respond(tab-port) {
+        padding: 8rem 5rem 25rem;
+    }
 }
 
 .skills {
@@ -85,6 +99,10 @@
             justify-content: space-between;
         }
 
+        @include respond(tab-port) {
+            justify-content: center;
+        }
+
         &--wrapper {
             flex: 0 0 32rem;
             padding: 3rem 0;
@@ -92,6 +110,10 @@
 
             @include respond(tab-land) {
                 flex: 0 0 30rem;
+            }
+
+            @include respond(tab-port) {
+                flex: 0 0 100%;
             }
         }
     }
@@ -131,6 +153,11 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+
+        @include respond(tab-port) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }
 
@@ -156,11 +183,15 @@
         @include respond(tab-land) {
             width: 90%;
         }
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
     }
 
     &__link {
-        margin-bottom: 8rem;
-        margin-right: 8rem;
+        margin: 0 4rem 8rem;
+
         &,
         &:visited,
         &:link {
@@ -181,6 +212,10 @@
 
     &__icon {
         font-size: 10rem;
+
+        @include respond(tab-port) {
+            font-size: 8rem;
+        }
     }
 }
 
@@ -188,6 +223,10 @@
     padding: 8rem 10rem 15rem;
     background-image: $dark-bg;
     color: $color-light-gray;
+
+    @include respond(tab-port) {
+        padding: 10rem;
+    }
 
     &__buttons {
         text-align: center;
@@ -213,10 +252,23 @@
 
             &:not(:last-child) {
                 margin-right: 4rem;
+
+                @include respond(tab-port) {
+                    margin: 0 auto 4rem;
+                }
             }
+
 
             @include respond(tab-land) {
                 width: 35%;
+            }
+
+            @include respond(tab-port) {
+                width: 40%;
+                min-width: 30rem;
+                display: block;
+                margin: 0 auto 4rem;
+
             }
         }
 
@@ -244,4 +296,10 @@ footer {
     letter-spacing: 8px;
     font-weight: 300;
     font-size: 1.4rem;
+    text-indent: 8px;
+
+    @include respond(tab-port) {
+        letter-spacing: 4px;
+        text-indent: 4px;
+    }
 }
