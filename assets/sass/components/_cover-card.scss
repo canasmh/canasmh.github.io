@@ -18,14 +18,15 @@
     }
 
     @include respond(tab-port) {
-        flex: 0 0 60rem;
+        flex: 0 0 58rem;
         width: 45rem;
     }
 
     @include respond(phone) {
+        display: block;
         flex: 0 1 65rem;
         min-width: 30rem;
-        width: 50%;
+        width: 70%;
     }
 
     &:not(:last-child) {
@@ -58,11 +59,14 @@
             clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
             padding: 0 2.5rem;
             height: 35%;
+            position: static;
         }
 
         @include respond(tab-port) {
             clip-path: none;
-            height: 30%;
+            height: 35%;
+            position: static;
+
         }
 
         &--1 {
@@ -140,6 +144,9 @@
 
         @include respond(tab-port) {
             padding: 3rem 5rem;
+            transform: translateY(0);
+            position: static;
+            height: 65%;
         }
 
         @include respond(phone) {
