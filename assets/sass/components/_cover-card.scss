@@ -216,9 +216,21 @@
 
     &:hover &__cover {
         transform: translateY(-100%) rotateX(135deg) scale(1.2);
+
+        @include respond(tab-land) {
+            transform: translateY(0);
+        }
     }
 
     &:hover &__content {
         transform: translateY(0) rotateX(0) scale(1);
+
+        @include respond(tab-land) {
+            transform: translateY(43%);
+        }
+
+        @include respond(tab-port) {
+            transform: translateY(0);
+        }
     }
 }
