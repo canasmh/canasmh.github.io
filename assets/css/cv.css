@@ -50,219 +50,245 @@ table {
 /* END OF CSS RESET */
 
 html {
-    font-size: 62.5%;
+    font-size: 43.75%;
 }
 
 body {
     font-size: 1.6rem;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color: #15133C; 
-}
-
-h1 {
-	font-size: 2.8rem;
-	margin-bottom: 0.8rem;
-	font-weight: 500;
-}
-
-h2 {
-	font-size: 2.0rem;
-	font-weight: 400;
-}
-
-h3 {
-	font-size: 1.8rem;
-	font-weight: 500;
-	letter-spacing: 3px;
-	margin-bottom: 0.4rem;
-}
-
-h4 {
-	font-size: 1.6rem;
-	font-weight: 500;
-}
-
-h5 {
-	font-size: 1.4rem;
-	font-weight: 400;
-}
-
-p, li, a {
-	font-size: 1.2rem;
-	font-weight: 300;
-}
-
-a {
-	text-decoration: none;
-	color: inherit;
-}
-
-ul {
-	list-style-type: '-';
-	margin-left: 1.6rem;
-}
-
-li {
-	padding-left: 0.8rem;
-	margin-bottom: 0.4rem;
-}
-
-a:hover {
-	color: #EC994B;
-}
-
-strong {
-	font-weight: 600;
-}
-
-hr {
-	color: #15133C;
-	font-size: 3rem;
-	border: none;
-	display: flex;
-	justify-content: space-between;
-	flex-basis: 100%;
-	
-}
-
-hr::after {
-	margin: 0.8rem auto;
-	content: "...";
-	letter-spacing: 3rem;
-	
-}
-
-.sec-title {
-	background-color: #F1EEE9;
-	border-top: 2px solid #15133C;
-	border-bottom: 2px solid #15133C;
-	text-align: center;
-	padding: 0.8rem 0;
-}
-
-.sec-content {
-	padding: 1.2rem 1.6rem;
-}
-
-.hidden {
-	visibility: hidden;
-}
-
-
-/* HEADER */
-header {
-	text-align: center;
-	padding: 0.8rem 0;
-}
-
-p.motto {
-	font-size: 1rem;
-	margin-bottom: 0.8rem;
-}
-
-.soc-icons {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	margin: 1.6rem auto 0.8rem;
-}
-
-.soc-icon {
-	font-size: 1.8rem;
-}
-
-/* EDUCATION SECTION */
-.edu, .work-exp, .pub, .languages {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-	align-items: space-evenly;
-}
-
-.institution, .pub-item, .language-item {
-	flex-basis: 100%;
-	width: 100%;
 	margin: 1.6rem auto;
 }
 
-/* RESEARCH SECTION */
-.research-item {
-	margin: 0.8rem auto 1.6rem;
+@media screen and (min-width: 37.5em) {
+	html {
+		font-size: 50%;
+	}
+
+	body {
+		letter-spacing: 1px;
+	}
 }
 
-.research-item:first-child {
-	margin: 1.6rem auto 0.8rem;
+@media screen and (min-width: 56.25em) {
+	html {
+		font-size: 56.25%;
+	}
+
+	body {
+		letter-spacing: 2px;
+	}
 }
 
-@media only screen and (min-width: 600px) {
-
-	h1 {
-		font-size: 4.8rem;
-		letter-spacing: 8px;
+@media screen and (min-width: 75em) {
+	html {
+		font-size: 62.5%;
 	}
 
-	h2 {
-		font-size: 3.2rem;
-		letter-spacing: 8px;
+	body {
+		letter-spacing: 3px;
+	}
+}
+
+@media screen and (min-width: 112.5em) {
+	html {
+		font-size: 75%;
 	}
 
-	h3 {
-		font-size: 2.8rem;
-	}
-
-	h4 {
-		font-size: 2.4rem;
-	}
-
-	h5 {
-		font-size: 2.0rem;
-	}
-
-	p, li, a {
-		font-size: 1.6rem;
-	}
-
-	a {
-		text-decoration: none;
-		color: inherit;
-	}
-
-	ul {
-		margin-left: 2.4rem;
-	}
-
-	li {
-		padding-left: 0.8rem;
-	}
-
-	.sec-title {
-		padding: 1.2rem 0;
-		border-top: 1px solid #15133C;
-		border-bottom: 1px solid #15133C;
-	}
-
-	.sec-content {
-		padding: 2.4rem 4.0rem;
-	}
-
-	header {
-		padding: 1.6rem 6.4rem;
-	}
-	
-	p.motto {
-		font-size: 1.6rem;
-		margin-bottom: 1.6rem;
+	body {
 		letter-spacing: 5px;
-		font-weight: 400;
 	}
-	
-	.soc-icons {
-		margin: 3.2rem auto 1.6rem;
+}
+
+.header {
+	text-align: center;
+}
+
+@media screen and (min-width: 56.25em) {
+	.header {
+		max-width: 80%;
+		margin: 0 auto;
 	}
-	
-	.soc-icon {
-		font-size: 3.2rem;
+}
+
+@media screen and (min-width: 75em) {
+	.header {
+		max-width: 60%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (min-width: 112.5em) {
+	.header {
+		max-width: 40%;
+		margin: 0 auto;
+	}
+}
+
+.header__heading {
+	font-size: 4.2rem;
+	text-align: center;
+}
+
+.header__title {
+	font-size: 1.6rem;
+	margin: 0.6rem auto 0.8rem;
+}
+
+.header__icons {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 1.2rem auto;
+}
+
+
+
+.header__icon, .header__icon:visited, .header__icon:link {
+	color: #15133C;
+	font-size: 2.4rem;
+	transition: color 0.1s;
+}
+
+.header__icon:hover {
+	color: #EC994B;
+}
+
+.title-container {
+	text-align: center;
+	background-color: #F1EEE9;
+	border-top: 1px solid #15133C;
+	border-bottom: 1px solid #15133C;
+	padding: 0.8rem;
+}
+
+.title-container__heading {
+	text-transform: uppercase;
+	font-size: 2.6rem;
+	letter-spacing: 5px;
+	font-weight: 400;
+}
+
+.about__content {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 1.6rem;
+	font-weight: 300;
+}
+
+.about__content--text {
+	line-height: 2;
+}
+
+@media screen and (min-width: 56.25em) {
+	.about__content {
+		width: 70%;
+	}
+}
+
+@media screen and (min-width: 75em) {
+	.about__content {
+		width: 60%;
+	}
+}
+
+.education__content, 
+.work__content, 
+.publications__content,
+.skills__content {
+	padding: 2.4rem 3.2rem;
+}
+
+.education__container, .work__container {
+	line-height: 1.8;
+	margin-bottom: 1.6rem;
+}
+
+.education__container--heading, 
+.work__container--heading, 
+.publications__container--heading,
+.programming-skills__heading,
+.language-skills__heading {
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 2rem;
+}
+
+.education__container--text, 
+.word__container--text, 
+.publications__container--text {
+	font-weight: 300;
+}
+
+.education__container--text strong, 
+.work__container--text strong, 
+.publications__container--text strong {
+	font-weight: 500;
+}
+
+@media screen and (min-width: 37.5em) {
+	.education__content, .work__content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.education__container, .work__container {
+		flex: 0 0 45%;
+		margin-bottom: 3rem;
+	}
+}
+
+@media screen and (min-width: 75em) {
+
+	.education__container, .work__container {
+		flex: 0 0 30%;
+		margin-bottom: 5rem;
+	}
+}
+
+.publications__container {
+	line-height: 2;
+}
+
+.publications__container:not(:last-child) {
+	margin-bottom: 2.4rem;
+}
+
+.programming-skills__container, .language-skills__container {
+	line-height: 2;
+	margin: 1.6rem 0;
+}
+
+.programming-skills__container--heading, .language-skills__container--heading {
+	font-weight: 500;
+	font-size: 1.6rem;
+}
+
+.programming-skills__heading,
+.language-skills__heading {
+	margin-bottom: 0.6rem;
+}
+
+@media screen and (min-width: 37.5em) {
+	.programming-skills, .language-skills {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.programming-skills__heading, .language-skills__heading {
+		flex: 0 0 100%;
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+
+	.programming-skills__container, 
+	.language-skills__container {
+		flex: 0 0 30%;
+		margin-bottom: 3rem;
 	}
 }
