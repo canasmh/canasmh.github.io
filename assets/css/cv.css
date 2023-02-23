@@ -194,55 +194,62 @@ body {
 	}
 }
 
-.education__content {
+.education__content, 
+.work__content, 
+.publications__content {
 	padding: 2.4rem 3.2rem;
 }
 
-.education__container {
+.education__container, .work__container {
 	line-height: 1.8;
-}
-
-.education__container:not(:last-child) {
 	margin-bottom: 1.6rem;
 }
 
-.education__container--heading {
+.education__container--heading, 
+.work__container--heading, 
+.publications__container--heading {
 	font-weight: 500;
 	text-transform: uppercase;
 	font-size: 2rem;
 }
 
-.education__container--text {
+.education__container--text, 
+.word__container--text, 
+.publications__container--text {
 	font-weight: 300;
 }
 
-.education__container--text strong {
+.education__container--text strong, 
+.work__container--text strong, 
+.publications__container--text strong {
 	font-weight: 500;
 }
 
 @media screen and (min-width: 37.5em) {
-	.education__content {
+	.education__content, .work__content {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
 	}
 
-	.education__container {
+	.education__container, .work__container {
 		flex: 0 0 45%;
-	}
-
-	.education__container:not(:last-child), .education__container:last-child {
 		margin-bottom: 3rem;
 	}
 }
 
 @media screen and (min-width: 75em) {
 
-	.education__container {
+	.education__container, .work__container {
 		flex: 0 0 30%;
-	}
-
-	.education__container:not(:last-child), .education__container:last-child {
 		margin-bottom: 5rem;
 	}
+}
+
+.publications__container {
+	line-height: 2;
+}
+
+.publications__container:not(:last-child) {
+	margin-bottom: 2.4rem;
 }
