@@ -155,7 +155,7 @@ body {
 	color: #EC994B;
 }
 
-.about__title {
+.title-container {
 	text-align: center;
 	background-color: #F1EEE9;
 	border-top: 1px solid #15133C;
@@ -163,7 +163,7 @@ body {
 	padding: 0.8rem;
 }
 
-.about__title--heading {
+.title-container__heading {
 	text-transform: uppercase;
 	font-size: 2.6rem;
 	letter-spacing: 5px;
@@ -191,5 +191,58 @@ body {
 @media screen and (min-width: 75em) {
 	.about__content {
 		width: 60%;
+	}
+}
+
+.education__content {
+	padding: 2.4rem 3.2rem;
+}
+
+.education__container {
+	line-height: 1.8;
+}
+
+.education__container:not(:last-child) {
+	margin-bottom: 1.6rem;
+}
+
+.education__container--heading {
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 2rem;
+}
+
+.education__container--text {
+	font-weight: 300;
+}
+
+.education__container--text strong {
+	font-weight: 500;
+}
+
+@media screen and (min-width: 37.5em) {
+	.education__content {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	.education__container {
+		flex: 0 0 45%;
+	}
+
+	.education__container:not(:last-child), .education__container:last-child {
+		margin-bottom: 3rem;
+	}
+}
+
+@media screen and (min-width: 75em) {
+
+	.education__container {
+		flex: 0 0 30%;
+	}
+
+	.education__container:not(:last-child), .education__container:last-child {
+		margin-bottom: 5rem;
 	}
 }
