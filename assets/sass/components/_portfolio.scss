@@ -74,8 +74,12 @@
                     background-color: $color-secondary;
                     box-shadow: 0 3px 10px rgba(15, 15, 15, 0.2);
                 }
+                &:active {
+                    background-color: $color-secondary-dark;
+                    box-shadow: 0 1px 5px rgba(15, 15, 15, 0.2);
+                }
             }
-
+ 
             &:nth-child(2) {
                 background-color: $color-light-gray;
                 color: $color-primary;
@@ -83,11 +87,15 @@
                 &:hover {
                     color: $color-secondary;
                     border: 1px solid $color-secondary;
-                    box-shadow: 1px 3px 10px rgba(15, 15, 15, 0.2);
+                    box-shadow: 0 3px 10px rgba(15, 15, 15, 0.2);
+                }
+
+                &:active {
+                    color: $color-secondary-dark;
+                    border: 1px solid $color-secondary-dark;
+                    box-shadow: 0 1px 5px rgba(15, 15, 15, 0.2);
                 }
             }
-
-            
         }
     }
 }
