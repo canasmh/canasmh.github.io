@@ -761,6 +761,9 @@ body {
     .portfolio__content--link:first-child:hover {
       background-color: #EC994B;
       box-shadow: 0 3px 10px rgba(15, 15, 15, 0.2); }
+    .portfolio__content--link:first-child:active {
+      background-color: #e77f1d;
+      box-shadow: 0 1px 5px rgba(15, 15, 15, 0.2); }
   .portfolio__content--link:nth-child(2) {
     background-color: #F1EEE9;
     color: #15133c;
@@ -768,7 +771,11 @@ body {
     .portfolio__content--link:nth-child(2):hover {
       color: #EC994B;
       border: 1px solid #EC994B;
-      box-shadow: 1px 3px 10px rgba(15, 15, 15, 0.2); }
+      box-shadow: 0 3px 10px rgba(15, 15, 15, 0.2); }
+    .portfolio__content--link:nth-child(2):active {
+      color: #e77f1d;
+      border: 1px solid #e77f1d;
+      box-shadow: 0 1px 5px rgba(15, 15, 15, 0.2); }
 
 .profile-box {
   width: 75%;
