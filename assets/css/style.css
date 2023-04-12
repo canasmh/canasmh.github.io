@@ -722,20 +722,42 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 15rem; }
+  @media screen and (max-width: 75em) {
+    .portfolio-item {
+      flex-direction: column; } }
 
 .portfolio__image {
   width: 40rem;
   filter: drop-shadow(15px 10px 12px rgba(0, 0, 0, 0.6)); }
+  @media screen and (max-width: 75em) {
+    .portfolio__image {
+      width: 50rem; } }
+  @media screen and (max-width: 37.5em) {
+    .portfolio__image {
+      width: 80%; } }
 
 .portfolio-item:nth-child(odd) .portfolio__image {
   margin-right: 15rem; }
+  @media screen and (max-width: 75em) {
+    .portfolio-item:nth-child(odd) .portfolio__image {
+      margin: 0 0 7.5rem; } }
 
 .portfolio-item:nth-child(even) .portfolio__image {
   margin-left: 15rem;
   order: 2; }
+  @media screen and (max-width: 75em) {
+    .portfolio-item:nth-child(even) .portfolio__image {
+      margin: 0 0 7.5rem;
+      order: 0; } }
 
 .portfolio__content {
   flex: 0 0 40%; }
+  @media screen and (max-width: 75em) {
+    .portfolio__content {
+      max-width: 50rem; } }
+  @media screen and (max-width: 37.5em) {
+    .portfolio__content {
+      max-width: 80%; } }
   .portfolio__content--title {
     font-size: 2.8rem;
     font-weight: 600;
@@ -748,11 +770,21 @@ body {
     margin-bottom: 1.2rem; }
   .portfolio__content--btn-group {
     margin-top: 3.2rem; }
+    @media screen and (max-width: 37.5em) {
+      .portfolio__content--btn-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
   .portfolio__content--link, .portfolio__content--link:visited, .portfolio__content--link:link {
     text-decoration: none;
     padding: 1rem 3rem;
     border-radius: 8px;
     transition: all 0.3s ease; }
+    @media screen and (max-width: 37.5em) {
+      .portfolio__content--link, .portfolio__content--link:visited, .portfolio__content--link:link {
+        width: 80%;
+        margin: 0;
+        text-align: center; } }
   .portfolio__content--link:first-child {
     background-color: #15133c;
     color: #F1EEE9;
@@ -764,6 +796,9 @@ body {
     .portfolio__content--link:first-child:active {
       background-color: #e77f1d;
       box-shadow: 0 1px 5px rgba(15, 15, 15, 0.2); }
+    @media screen and (max-width: 37.5em) {
+      .portfolio__content--link:first-child {
+        margin: 0 0 1.2rem; } }
   .portfolio__content--link:nth-child(2) {
     background-color: #F1EEE9;
     color: #15133c;

@@ -12,17 +12,30 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 15rem;
+
+        @include respond(tab-land) {
+            flex-direction: column;
+        }
     }
 
     &__image {
         width: 40rem;
         filter: drop-shadow(15px 10px 12px rgba(0, 0, 0, 0.6));
-        
+        @include respond(tab-land) {
+            width: 50rem;
+        }
+
+        @include respond(phone) {
+            width: 80%;
+        }
     }
 
     &-item:nth-child(odd){
         & .portfolio__image {
             margin-right: 15rem;
+            @include respond(tab-land) {
+                margin: 0 0 7.5rem;
+            }
         }
     }
 
@@ -30,11 +43,25 @@
         & .portfolio__image {
             margin-left: 15rem;
             order: 2;
+
+            @include respond(tab-land) {
+                margin: 0 0 7.5rem;
+                order: 0;
+            }
         }
     }
 
     &__content {
         flex: 0 0 40%;
+
+        @include respond(tab-land) {
+            max-width: 50rem;
+        }
+
+        @include respond(phone) {
+            max-width: 80%;
+        }
+
         &--title {
             font-size: 2.8rem;
             font-weight: 600;
@@ -53,6 +80,12 @@
 
         &--btn-group {
             margin-top: 3.2rem;
+
+            @include respond(phone) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
         }
 
         &--link {
@@ -63,6 +96,12 @@
                 padding: 1rem 3rem;
                 border-radius: 8px;
                 transition: all 0.3s ease;
+
+                @include respond(phone) {
+                    width: 80%;
+                    margin: 0;
+                    text-align: center;
+                }
             }
 
             &:first-child {
@@ -77,6 +116,10 @@
                 &:active {
                     background-color: $color-secondary-dark;
                     box-shadow: 0 1px 5px rgba(15, 15, 15, 0.2);
+                }
+
+                @include respond(phone) {
+                    margin: 0 0 1.2rem;
                 }
             }
  
