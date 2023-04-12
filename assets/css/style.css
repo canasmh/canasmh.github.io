@@ -722,9 +722,15 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 15rem; }
+  .portfolio-item:last-child {
+    margin-bottom: 7.5rem; }
   @media screen and (max-width: 75em) {
     .portfolio-item {
-      flex-direction: column; } }
+      flex-direction: column; }
+      .portfolio-item:not(:last-child) {
+        margin-bottom: 7.5rem; }
+      .portfolio-item:last-child {
+        margin-bottom: 0; } }
 
 .portfolio__image {
   width: 40rem;

@@ -13,8 +13,20 @@
         align-items: center;
         margin-bottom: 15rem;
 
+        &:last-child {
+            margin-bottom: 7.5rem;
+        }
+
         @include respond(tab-land) {
             flex-direction: column;
+
+            &:not(:last-child) {
+                margin-bottom: 7.5rem;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 
